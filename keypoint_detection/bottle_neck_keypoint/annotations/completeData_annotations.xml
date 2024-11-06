@@ -1,0 +1,1840 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>1437128</id>
+      <size>300</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2024-11-02 15:09:20.303429+00:00</created>
+      <updated>2024-11-02 19:10:11.454800+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>299</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>1439585</id>
+          <start>0</start>
+          <stop>299</stop>
+          <url>https://app.cvat.ai/api/jobs/1437128</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>shiva48</username>
+        <email>shiva.tutunchi23@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>pick_point</name>
+          <color>#3b6ff3</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2024-11-02 19:10:29.902904+00:00</dumped>
+  </meta>
+  <image id="0" name="100_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="164.05" ytl="213.01" xbr="237.28" ybr="372.18" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="208.23,220.28;213.10,240.20;180.39,363.71" z_order="0">
+    </points>
+  </image>
+  <image id="1" name="100_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="234.25" ytl="23.58" xbr="386.16" ybr="131.31" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="377.69,108.92;357.72,108.31;250.60,39.32" z_order="0">
+    </points>
+  </image>
+  <image id="2" name="100_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="174.95" ytl="121.63" xbr="334.11" ybr="174.28" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="179.79,156.73;197.34,144.62;323.22,144.62" z_order="0">
+    </points>
+  </image>
+  <image id="3" name="10_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="147.11" ytl="200.30" xbr="273.59" ybr="343.13" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="156.18,216.04;173.13,223.30;249.38,328.61" z_order="0">
+    </points>
+  </image>
+  <image id="4" name="10_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="173.10" ytl="34.48" xbr="306.88" ybr="159.15" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="300.22,140.39;277.80,135.50;190.68,55.05" z_order="0">
+    </points>
+  </image>
+  <image id="5" name="10_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="195.52,180.94;204.00,161.60;309.90,95.00" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="177.97" ytl="79.26" xbr="326.85" ybr="189.41" z_order="0">
+    </box>
+  </image>
+  <image id="6" name="11_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="212.47" ytl="73.82" xbr="267.54" ybr="234.20" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="233.65,81.68;243.33,96.21;234.25,219.06" z_order="0">
+    </points>
+  </image>
+  <image id="7" name="11_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="203.99,103.47;215.49,121.02;223.36,248.11" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="192.50" ytl="94.39" xbr="252.41" ybr="255.98" z_order="0">
+    </box>
+  </image>
+  <image id="8" name="11_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="191.29" ytl="21.77" xbr="344.40" ybr="123.44" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="198.55,44.77;218.52,43.56;331.09,101.05" z_order="0">
+    </points>
+  </image>
+  <image id="9" name="12_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="247.57,77.45;238.49,96.21;141.66,170.04" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="123.50" ytl="69.58" xbr="263.91" ybr="193.65" z_order="0">
+    </box>
+  </image>
+  <image id="10" name="12_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="193.71" ytl="97.42" xbr="251.20" ybr="256.59" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="204.60,104.08;215.49,121.63;222.76,243.88" z_order="0">
+    </points>
+  </image>
+  <image id="11" name="12_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="190.68,61.71;210.05,58.08;321.40,114.40" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="184.63" ytl="36.90" xbr="338.95" ybr="134.94" z_order="0">
+    </box>
+  </image>
+  <image id="12" name="13_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="275.41,85.92;253.02,79.87;171.31,5.43" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="151.34" ytl="0.59" xbr="282.67" ybr="106.50" z_order="0">
+    </box>
+  </image>
+  <image id="13" name="13_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="167.08" ytl="134.94" xbr="260.88" ybr="288.10" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="173.73,145.84;190.68,158.54;234.90,269.90" z_order="0">
+    </points>
+  </image>
+  <image id="14" name="13_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="190.68" ytl="24.79" xbr="345.01" ybr="124.05" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="198.55,47.19;219.12,45.37;326.85,101.05" z_order="0">
+    </points>
+  </image>
+  <image id="15" name="14_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="280.86,137.36;261.49,125.26;192.50,30.85" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="169.50" ytl="12.09" xbr="289.33" ybr="150.68" z_order="0">
+    </box>
+  </image>
+  <image id="16" name="14_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="184.63" ytl="125.86" xbr="282.67" ybr="281.40" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="193.10,137.36;210.10,152.50;253.62,267.48" z_order="0">
+    </points>
+  </image>
+  <image id="17" name="14_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="299.01,263.85;312.33,247.51;427.90,203.90" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="286.91" ytl="179.12" xbr="447.89" ybr="267.48" z_order="0">
+    </box>
+  </image>
+  <image id="18" name="15_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="302.64,183.96;292.40,166.40;300.83,45.98" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="269.36" ytl="31.45" xbr="328.67" ybr="190.62" z_order="0">
+    </box>
+  </image>
+  <image id="19" name="15_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="183.42,142.81;199.15,152.49;245.10,267.50" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="176.16" ytl="129.49" xbr="269.96" ybr="282.61" z_order="0">
+    </box>
+  </image>
+  <image id="20" name="15_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="283.28,229.96;305.67,225.12;427.92,254.77" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="279.64" ytl="205.14" xbr="443.05" ybr="277.77" z_order="0">
+    </box>
+  </image>
+  <image id="21" name="16_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="192.50,416.36;207.02,402.44;315.96,358.87" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="183.42" ytl="335.26" xbr="334.11" ybr="424.83" z_order="0">
+    </box>
+  </image>
+  <image id="22" name="16_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="257.25,159.75;259.07,182.75;207.02,295.32" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="185.23" ytl="151.89" xbr="282.07" ybr="306.21" z_order="0">
+    </box>
+  </image>
+  <image id="23" name="16_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="280.25,246.90;300.22,241.46;424.89,271.11" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="271.17" ytl="221.49" xbr="435.79" ybr="294.11" z_order="0">
+    </box>
+  </image>
+  <image id="24" name="17_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="165.26,475.06;171.31,458.72;249.99,375.21" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="151.34" ytl="348.58" xbr="283.28" ybr="482.33" z_order="0">
+    </box>
+  </image>
+  <image id="25" name="17_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="345.01,205.14;354.70,227.50;353.48,347.37" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="326.25" ytl="196.07" xbr="383.13" ybr="361.89" z_order="0">
+    </box>
+  </image>
+  <image id="26" name="17_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="278.43,249.32;302.64,244.48;423.70,274.10" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="271.17" ytl="222.09" xbr="437.60" ybr="296.53" z_order="0">
+    </box>
+  </image>
+  <image id="27" name="18_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="161.03,472.64;167.10,455.10;246.96,372.79" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="148.30" ytl="345.55" xbr="274.80" ybr="477.50" z_order="0">
+    </box>
+  </image>
+  <image id="28" name="18_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="338.96,203.33;349.85,225.72;348.64,347.97" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="324.43" ytl="197.28" xbr="377.08" ybr="363.10" z_order="0">
+    </box>
+  </image>
+  <image id="29" name="18_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="285.09,216.04;306.88,221.49;401.90,303.79" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="277.83" ytl="195.46" xbr="421.26" ybr="321.95" z_order="0">
+    </box>
+  </image>
+  <image id="30" name="19_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="395.24,432.10;375.30,433.30;268.15,376.42" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="249.38" ytl="353.42" xbr="403.71" ybr="454.49" z_order="0">
+    </box>
+  </image>
+  <image id="31" name="19_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="352.27,209.38;352.87,232.98;299.62,341.92" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="277.83" ytl="202.12" xbr="373.45" ybr="358.87" z_order="0">
+    </box>
+  </image>
+  <image id="32" name="19_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="312.33,188.20;328.06,203.33;365.58,323.76" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="305.67" ytl="177.91" xbr="391.00" ybr="337.08" z_order="0">
+    </box>
+  </image>
+  <image id="33" name="1_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="360.74" ytl="41.70" xbr="487.83" ybr="174.28" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="364.98,57.48;383.74,64.74;466.65,153.10" z_order="0">
+    </points>
+  </image>
+  <image id="34" name="1_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="240.91" ytl="85.31" xbr="374.66" ybr="213.62" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="260.88,209.38;266.94,186.99;355.90,105.29" z_order="0">
+    </points>
+  </image>
+  <image id="35" name="1_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="188.86" ytl="259.61" xbr="335.93" ybr="367.94" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="203.39,362.50;211.26,344.34;314.10,282.60" z_order="0">
+    </points>
+  </image>
+  <image id="36" name="20_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="257.86" ytl="339.50" xbr="410.37" ybr="441.78" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="401.90,421.81;381.90,420.60;277.20,363.70" z_order="0">
+    </points>
+  </image>
+  <image id="37" name="20_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="282.07,200.91;276.62,223.30;194.92,314.69" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="179.18" ytl="191.83" xbr="306.27" ybr="329.21" z_order="0">
+    </box>
+  </image>
+  <image id="38" name="20_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="341.98,179.73;345.61,203.93;301.43,323.16" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="280.86" ytl="172.46" xbr="368.00" ybr="333.45" z_order="0">
+    </box>
+  </image>
+  <image id="39" name="21_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="377.69,390.34;362.60,403.00;241.52,419.99" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="228.81" ytl="381.26" xbr="387.98" ybr="442.99" z_order="0">
+    </box>
+  </image>
+  <image id="40" name="21_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="342.59" ytl="263.24" xbr="486.02" ybr="390.94" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="350.45,282.61;373.45,289.87;466.65,371.57" z_order="0">
+    </points>
+  </image>
+  <image id="41" name="21_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="288.12" ytl="177.31" xbr="375.87" ybr="335.87" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="349.85,182.15;351.66,206.36;311.12,322.55" z_order="0">
+    </points>
+  </image>
+  <image id="42" name="22_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="226.39" ytl="364.31" xbr="384.95" ybr="429.67" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="376.48,373.39;356.50,389.70;242.73,406.07" z_order="0">
+    </points>
+  </image>
+  <image id="43" name="22_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="340.17" ytl="297.74" xbr="405.53" ybr="462.96" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="378.29,308.03;384.30,332.20;363.20,449.00" z_order="0">
+    </points>
+  </image>
+  <image id="44" name="22_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="259.67" ytl="87.13" xbr="426.71" ybr="144.62" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="415.21,101.66;395.24,113.76;276.01,119.21" z_order="0">
+    </points>
+  </image>
+  <image id="45" name="23_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="223.36" ytl="352.21" xbr="384.95" ybr="415.15" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="376.48,363.71;357.70,379.40;239.10,395.80" z_order="0">
+    </points>
+  </image>
+  <image id="46" name="23_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="265.73" ytl="343.13" xbr="429.13" ybr="406.68" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="415.81,351.00;398.30,366.70;284.49,386.10" z_order="0">
+    </points>
+  </image>
+  <image id="47" name="23_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="415.21,115.57;392.80,127.70;274.20,130.70" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="259.67" ytl="104.08" xbr="423.08" ybr="156.73" z_order="0">
+    </box>
+  </image>
+  <image id="48" name="24_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="364.37,335.87;350.50,356.40;251.20,418.18" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="233.00" ytl="328.00" xbr="377.10" ybr="436.90" z_order="0">
+    </box>
+  </image>
+  <image id="49" name="24_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="411.58,393.97;389.79,388.52;302.60,308.00" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="280.25" ytl="283.82" xbr="418.24" ybr="412.73" z_order="0">
+    </box>
+  </image>
+  <image id="50" name="24_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="432.76,148.86;411.60,138.60;340.77,44.16" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="315.96" ytl="22.98" xbr="441.84" ybr="168.83" z_order="0">
+    </box>
+  </image>
+  <image id="51" name="25_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="377.08,367.94;389.80,389.10;409.20,501.10" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="368.61" ytl="357.66" xbr="432.76" ybr="512.00" z_order="0">
+    </box>
+  </image>
+  <image id="52" name="25_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="299.62" ytl="265.66" xbr="404.32" ybr="418.18" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="398.26,403.04;383.13,393.36;329.88,292.29" z_order="0">
+    </points>
+  </image>
+  <image id="53" name="25_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="394.03" ytl="107.10" xbr="519.91" ybr="245.69" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="513.86,227.54;495.10,219.06;418.24,133.13" z_order="0">
+    </points>
+  </image>
+  <image id="54" name="26_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="288.12" ytl="369.76" xbr="450.31" ybr="451.46" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="297.80,395.78;318.98,393.36;437.00,433.91" z_order="0">
+    </points>
+  </image>
+  <image id="55" name="26_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="346.82,425.44;335.30,408.50;318.98,290.48" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="295.38" ytl="272.32" xbr="359.53" ybr="433.31" z_order="0">
+    </box>
+  </image>
+  <image id="56" name="26_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="263.91" ytl="217.85" xbr="401.90" ybr="351.00" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="393.42,333.45;372.85,328.00;288.72,243.27" z_order="0">
+    </points>
+  </image>
+  <image id="57" name="27_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="320.19,397.60;331.69,380.65;443.05,328.61" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="305.06" ytl="306.21" xbr="459.99" ybr="403.05" z_order="0">
+    </box>
+  </image>
+  <image id="58" name="27_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="223.97,461.75;226.40,440.60;297.20,346.16" z_order="0">
+    </points>
+  </image>
+  <image id="59" name="27_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="300.83,406.07;280.86,407.28;181.60,332.24" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="161.03" ytl="309.84" xbr="306.88" ybr="429.07" z_order="0">
+    </box>
+  </image>
+  <image id="60" name="28_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="350.45" ytl="251.14" xbr="474.52" ybr="384.28" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="366.19,379.44;372.80,358.30;456.36,271.11" z_order="0">
+    </points>
+  </image>
+  <image id="61" name="28_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="176.76,450.25;172.50,431.50;212.50,322.60" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="155.58" ytl="302.58" xbr="235.47" ybr="455.70" z_order="0">
+    </box>
+  </image>
+  <image id="62" name="28_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="206.42" ytl="374.60" xbr="340.17" ybr="505.32" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="319.59,386.10;310.51,407.89;222.15,485.96" z_order="0">
+    </points>
+  </image>
+  <image id="63" name="29_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="267.54,278.37;284.49,263.24;402.50,228.70" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="257.86" ytl="204.54" xbr="418.84" ybr="288.66" z_order="0">
+    </box>
+  </image>
+  <image id="64" name="29_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="215.49,467.80;210.65,448.44;253.62,341.31" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="189.47" ytl="317.71" xbr="280.25" ybr="473.85" z_order="0">
+    </box>
+  </image>
+  <image id="65" name="29_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="196.73" ytl="383.68" xbr="356.51" ybr="439.96" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="346.82,398.81;326.25,410.31;207.63,416.36" z_order="0">
+    </points>
+  </image>
+  <image id="66" name="2_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="312.93" ytl="132.52" xbr="459.39" ybr="248.72" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="317.77,151.89;339.56,156.12;441.23,228.75" z_order="0">
+    </points>
+  </image>
+  <image id="67" name="2_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="219.12,220.88;243.33,217.85;361.95,256.59" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="211.26" ytl="196.07" xbr="377.08" ybr="282.61" z_order="0">
+    </box>
+  </image>
+  <image id="68" name="2_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="144.69,230.56;166.47,229.35;282.07,271.72" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="135.00" ytl="206.36" xbr="296.59" ybr="296.53" z_order="0">
+    </box>
+  </image>
+  <image id="69" name="30_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="369.21,133.73;385.56,142.20;449.10,249.93" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="360.14" ytl="119.81" xbr="472.10" ybr="265.66" z_order="0">
+    </box>
+  </image>
+  <image id="70" name="30_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="216.10,434.52;233.70,418.20;343.19,375.81" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="204.60" ytl="351.60" xbr="363.16" ybr="439.96" z_order="0">
+    </box>
+  </image>
+  <image id="71" name="30_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="198.55" ytl="369.15" xbr="356.51" ybr="461.14" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="345.61,437.54;323.80,440.60;213.07,393.97" z_order="0">
+    </points>
+  </image>
+  <image id="72" name="31_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="354.08" ytl="6.64" xbr="478.76" ybr="134.94" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="462.42,13.90;458.18,32.06;380.11,113.76" z_order="0">
+    </points>
+  </image>
+  <image id="73" name="31_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="441.23,411.52;431.50,392.80;435.20,273.50" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="408.55" ytl="259.01" xbr="459.99" ybr="418.18" z_order="0">
+    </box>
+  </image>
+  <image id="74" name="31_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="368.61,277.16;369.82,300.16;326.25,412.73" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="305.67" ytl="269.90" xbr="395.24" ybr="424.83" z_order="0">
+    </box>
+  </image>
+  <image id="75" name="32_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="454.55,88.34;435.18,85.31;332.30,19.95" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="318.40" ytl="7.24" xbr="462.42" ybr="109.52" z_order="0">
+    </box>
+  </image>
+  <image id="76" name="32_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="472.70,387.92;453.34,377.63;381.92,287.45" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="356.51" ytl="263.85" xbr="478.80" ybr="400.60" z_order="0">
+    </box>
+  </image>
+  <image id="77" name="32_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="329.27" ytl="219.06" xbr="448.50" ybr="360.08" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="430.34,225.72;426.10,248.11;351.70,343.10" z_order="0">
+    </points>
+  </image>
+  <image id="78" name="33_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="438.81,203.93;422.50,188.20;385.56,75.63" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="363.77" ytl="56.87" xbr="447.29" ybr="214.83" z_order="0">
+    </box>
+  </image>
+  <image id="79" name="33_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="340.17" ytl="370.97" xbr="492.07" ybr="459.33" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="484.81,438.15;462.40,440.60;366.20,398.20" z_order="0">
+    </points>
+  </image>
+  <image id="80" name="33_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="496.31,261.43;477.55,248.72;420.70,144.60" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="394.63" ytl="126.47" xbr="503.57" ybr="274.74" z_order="0">
+    </box>
+  </image>
+  <image id="81" name="34_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="255.44" ytl="91.37" xbr="413.39" ybr="172.46" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="407.34,151.28;386.77,153.70;271.80,113.10" z_order="0">
+    </points>
+  </image>
+  <image id="82" name="34_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="343.80" ytl="418.18" xbr="492.07" ybr="505.93" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="488.44,484.14;464.84,485.96;367.40,444.20" z_order="0">
+    </points>
+  </image>
+  <image id="83" name="34_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="500.54,256.59;483.60,245.69;425.50,139.20" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="402.50" ytl="119.81" xbr="509.02" ybr="268.69" z_order="0">
+    </box>
+  </image>
+  <image id="84" name="35_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="274.80" ytl="227.54" xbr="421.26" ybr="335.87" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="407.34,233.59;397.66,250.53;295.40,314.10" z_order="0">
+    </points>
+  </image>
+  <image id="85" name="35_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="310.51" ytl="342.53" xbr="378.29" ybr="498.06" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="332.30,493.22;327.46,474.46;352.90,363.70" z_order="0">
+    </points>
+  </image>
+  <image id="86" name="35_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="480.57,268.09;463.02,256.59;404.30,151.30" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="381.32" ytl="130.70" xbr="487.23" ybr="281.40" z_order="0">
+    </box>
+  </image>
+  <image id="87" name="36_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="259.67,223.30;256.04,245.09;198.60,347.40" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="181.60" ytl="215.43" xbr="281.46" ybr="365.52" z_order="0">
+    </box>
+  </image>
+  <image id="88" name="36_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="421.87,363.10;427.31,341.92;508.40,253.00" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="401.90" ytl="234.80" xbr="528.99" ybr="369.15" z_order="0">
+    </box>
+  </image>
+  <image id="89" name="36_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="450.31,286.85;432.20,273.50;370.43,165.81" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="348.64" ytl="147.65" xbr="456.36" ybr="300.16" z_order="0">
+    </box>
+  </image>
+  <image id="90" name="37_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="117.45" ytl="165.81" xbr="194.92" ybr="322.55" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="183.42,314.08;168.89,297.14;137.40,181.50" z_order="0">
+    </points>
+  </image>
+  <image id="91" name="37_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="313.54,256.59;340.20,256.00;446.68,306.82" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="309.30" ytl="231.17" xbr="464.23" ybr="328.61" z_order="0">
+    </box>
+  </image>
+  <image id="92" name="37_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="371.03" ytl="14.51" xbr="506.60" ybr="134.34" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="388.58,127.68;400.70,104.70;484.81,33.27" z_order="0">
+    </points>
+  </image>
+  <image id="93" name="38_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="179.18" ytl="68.37" xbr="257.86" ybr="222.10" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="249.99,213.62;233.00,197.30;200.36,87.74" z_order="0">
+    </points>
+  </image>
+  <image id="94" name="38_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="317.77" ytl="231.17" xbr="443.05" ybr="366.13" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="323.82,245.69;345.61,256.59;426.10,350.39" z_order="0">
+    </points>
+  </image>
+  <image id="95" name="38_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="358.32,156.12;373.45,137.36;478.76,88.95" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="344.40" ytl="65.95" xbr="496.31" ybr="160.97" z_order="0">
+    </box>
+  </image>
+  <image id="96" name="39_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="145.90" ytl="50.21" xbr="276.01" ybr="170.65" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="271.17,153.10;248.78,147.05;161.03,69.58" z_order="0">
+    </points>
+  </image>
+  <image id="97" name="39_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="334.11" ytl="125.86" xbr="495.70" ybr="197.88" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="340.77,148.26;363.77,144.02;484.20,174.90" z_order="0">
+    </points>
+  </image>
+  <image id="98" name="39_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="338.95" ytl="98.63" xbr="498.12" ybr="159.75" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="346.22,151.28;366.80,138.00;484.20,121.00" z_order="0">
+    </points>
+  </image>
+  <image id="99" name="3_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="302.64,186.99;323.82,182.75;439.42,206.96" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="295.99" ytl="163.39" xbr="456.36" ybr="228.75" z_order="0">
+    </box>
+  </image>
+  <image id="100" name="3_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="282.07" ytl="177.91" xbr="368.00" ybr="335.87" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="291.14,191.83;306.30,206.40;345.01,323.16" z_order="0">
+    </points>
+  </image>
+  <image id="101" name="3_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="152.55" ytl="137.36" xbr="295.38" ybr="263.85" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="159.81,156.12;181.00,162.18;268.75,242.06" z_order="0">
+    </points>
+  </image>
+  <image id="102" name="40_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="171.92,67.16;190.70,75.00;262.70,169.40" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="166.47" ytl="52.63" xbr="285.09" ybr="185.78" z_order="0">
+    </box>
+  </image>
+  <image id="103" name="40_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="348.03,179.12;367.40,166.41;486.62,147.05" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="340.77" ytl="123.44" xbr="500.54" ybr="185.78" z_order="0">
+    </box>
+  </image>
+  <image id="104" name="40_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="328.67,212.41;350.45,207.57;468.47,234.19" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="322.01" ytl="185.78" xbr="487.23" ybr="257.80" z_order="0">
+    </box>
+  </image>
+  <image id="105" name="41_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="121.08,243.88;141.66,246.90;249.99,300.16" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="113.82" ytl="224.51" xbr="266.33" ybr="321.34" z_order="0">
+    </box>
+  </image>
+  <image id="106" name="41_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="370.43" ytl="85.92" xbr="507.20" ybr="213.60" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="384.95,208.17;397.70,185.20;483.00,107.70" z_order="0">
+    </points>
+  </image>
+  <image id="107" name="41_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="301.43" ytl="288.66" xbr="462.42" ybr="356.44" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="305.67,315.90;328.70,311.10;443.70,335.90" z_order="0">
+    </points>
+  </image>
+  <image id="108" name="42_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="297.20,436.94;312.93,418.18;415.82,363.10" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="285.70" ytl="337.68" xbr="430.95" ybr="442.99" z_order="0">
+    </box>
+  </image>
+  <image id="109" name="42_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="317.17" ytl="99.23" xbr="379.50" ybr="254.77" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="345.01,251.75;336.53,231.17;355.90,115.57" z_order="0">
+    </points>
+  </image>
+  <image id="110" name="42_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="285.70" ytl="346.16" xbr="449.71" ybr="415.15" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="292.35,374.00;314.75,368.55;430.95,395.78" z_order="0">
+    </points>
+  </image>
+  <image id="111" name="43_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="314.75" ytl="232.38" xbr="474.52" ybr="308.03" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="323.22,301.37;340.17,288.66;456.97,258.40" z_order="0">
+    </points>
+  </image>
+  <image id="112" name="43_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="273.59" ytl="95.00" xbr="336.53" ybr="254.77" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="307.48,249.32;297.20,227.54;309.30,113.80" z_order="0">
+    </points>
+  </image>
+  <image id="113" name="43_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="286.91,404.86;306.88,401.23;427.92,427.86" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="282.07" ytl="378.23" xbr="439.42" ybr="446.01" z_order="0">
+    </box>
+  </image>
+  <image id="114" name="44_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="397.05" ytl="132.52" xbr="501.75" ybr="273.53" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="414.61,270.51;419.45,249.32;478.76,151.28" z_order="0">
+    </points>
+  </image>
+  <image id="115" name="44_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="289.93" ytl="97.42" xbr="345.61" ybr="255.38" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="317.77,250.54;308.09,229.35;318.98,114.97" z_order="0">
+    </points>
+  </image>
+  <image id="116" name="44_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="123.50,438.75;143.47,435.12;259.07,467.20" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="118.06" ytl="412.73" xbr="274.80" ybr="486.56" z_order="0">
+    </box>
+  </image>
+  <image id="117" name="45_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="475.12,251.75;460.60,236.62;430.34,125.26" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="406.13" ytl="104.08" xbr="480.57" ybr="260.82" z_order="0">
+    </box>
+  </image>
+  <image id="118" name="45_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="282.67,262.03;289.30,238.40;371.00,150.70" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="263.30" ytl="130.10" xbr="389.19" ybr="265.66" z_order="0">
+    </box>
+  </image>
+  <image id="119" name="45_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="141.66" ytl="364.31" xbr="260.88" ybr="498.67" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="149.53,380.65;168.89,392.15;237.89,485.96" z_order="0">
+    </points>
+  </image>
+  <image id="120" name="46_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="439.42,194.25;418.84,203.93;299.62,197.88" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="283.88" ytl="173.67" xbr="446.08" ybr="230.56" z_order="0">
+    </box>
+  </image>
+  <image id="121" name="46_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="379.50" ytl="17.53" xbr="524.15" ybr="119.81" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="394.03,114.37;407.34,95.00;506.60,39.90" z_order="0">
+    </points>
+  </image>
+  <image id="122" name="46_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="251.20,351.00;262.09,372.18;262.70,490.80" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="236.07" ytl="343.13" xbr="289.93" ybr="501.69" z_order="0">
+    </box>
+  </image>
+  <image id="123" name="47_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="296.59" ytl="136.15" xbr="421.87" ybr="269.30" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="403.11,142.20;398.87,162.18;320.19,248.72" z_order="0">
+    </points>
+  </image>
+  <image id="124" name="47_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="280.86,140.39;294.20,119.80;386.80,59.30" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="265.73" ytl="32.66" xbr="410.37" ybr="145.23" z_order="0">
+    </box>
+  </image>
+  <image id="125" name="47_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="292.96" ytl="341.31" xbr="339.56" ybr="501.09" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="304.46,350.39;314.70,372.80;315.96,487.77" z_order="0">
+    </points>
+  </image>
+  <image id="126" name="48_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="336.53,216.04;321.40,232.98;209.40,275.30" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="193.10" ytl="209.99" xbr="348.64" ybr="294.71" z_order="0">
+    </box>
+  </image>
+  <image id="127" name="48_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="248.17,135.55;270.60,131.90;384.95,159.15" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="241.52" ytl="110.13" xbr="400.69" ybr="181.54" z_order="0">
+    </box>
+  </image>
+  <image id="128" name="48_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="358.32,349.79;369.21,371.57;371.00,484.80" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="343.80" ytl="340.71" xbr="394.63" ybr="498.67" z_order="0">
+    </box>
+  </image>
+  <image id="129" name="49_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="383.74,282.61;406.10,276.00;522.90,291.70" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="378.90" ytl="253.56" xbr="538.07" ybr="314.70" z_order="0">
+    </box>
+  </image>
+  <image id="130" name="49_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="242.70,153.70;266.90,150.70;381.30,177.90" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="238.49" ytl="131.92" xbr="400.69" ybr="202.72" z_order="0">
+    </box>
+  </image>
+  <image id="131" name="49_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="276.01,501.69;286.91,487.17;393.42,430.28" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="265.12" ytl="403.65" xbr="410.97" ybr="505.32" z_order="0">
+    </box>
+  </image>
+  <image id="132" name="4_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="300.83,231.17;320.20,220.30;438.80,203.30" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="294.77" ytl="178.52" xbr="454.55" ybr="239.04" z_order="0">
+    </box>
+  </image>
+  <image id="133" name="4_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="285.09" ytl="178.52" xbr="348.03" ybr="341.92" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="314.14,186.99;322.60,211.20;308.09,335.26" z_order="0">
+    </points>
+  </image>
+  <image id="134" name="4_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="139.84" ytl="153.70" xbr="277.83" ybr="279.58" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="145.90,172.46;167.68,175.49;252.41,255.98" z_order="0">
+    </points>
+  </image>
+  <image id="135" name="50_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="363.77,413.94;372.85,393.97;465.44,327.40" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="349.85" ytl="302.58" xbr="488.44" ybr="419.39" z_order="0">
+    </box>
+  </image>
+  <image id="136" name="50_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="304.46,203.33;323.82,220.27;374.66,330.42" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="298.41" ytl="193.65" xbr="397.66" ybr="343.74" z_order="0">
+    </box>
+  </image>
+  <image id="137" name="50_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="372.85,389.73;392.21,377.63;512.65,355.23" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="365.58" ytl="328.61" xbr="524.15" ybr="395.78" z_order="0">
+    </box>
+  </image>
+  <image id="138" name="51_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="368.61,498.67;373.45,478.09;431.55,386.70" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="349.24" ytl="360.68" xbr="458.18" ybr="506.53" z_order="0">
+    </box>
+  </image>
+  <image id="139" name="51_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="246.96" ytl="187.59" xbr="338.95" ybr="343.13" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="312.33,194.25;312.33,219.06;267.54,330.42" z_order="0">
+    </points>
+  </image>
+  <image id="140" name="51_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="390.40,294.11;413.39,306.82;481.78,398.20" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="383.74" ytl="274.74" xbr="507.20" ybr="415.75" z_order="0">
+    </box>
+  </image>
+  <image id="141" name="52_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="242.73" ytl="367.34" xbr="406.13" ybr="419.40" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="249.38,400.62;270.00,393.40;389.19,394.57" z_order="0">
+    </points>
+  </image>
+  <image id="142" name="52_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="265.12,176.70;265.73,197.88;217.31,314.69" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="197.94" ytl="168.83" xbr="288.12" ybr="324.37" z_order="0">
+    </box>
+  </image>
+  <image id="143" name="52_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="467.86,171.25;456.97,191.83;368.60,264.50" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="346.22" ytl="165.20" xbr="484.20" ybr="285.64" z_order="0">
+    </box>
+  </image>
+  <image id="144" name="53_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="268.15" ytl="328.00" xbr="407.95" ybr="450.25" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="273.59,346.76;295.99,352.81;388.58,437.54" z_order="0">
+    </points>
+  </image>
+  <image id="145" name="53_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="355.29,93.18;336.50,104.10;213.07,105.29" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="201.57" ytl="72.61" xbr="364.98" ybr="133.73" z_order="0">
+    </box>
+  </image>
+  <image id="146" name="53_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="327.46" ytl="134.94" xbr="488.44" ybr="234.80" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="478.76,206.96;455.80,208.20;348.60,156.10" z_order="0">
+    </points>
+  </image>
+  <image id="147" name="54_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="290.54,347.97;291.75,370.36;244.54,476.27" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="222.15" ytl="337.68" xbr="319.59" ybr="488.38" z_order="0">
+    </box>
+  </image>
+  <image id="148" name="54_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="264.51" ytl="11.48" xbr="390.40" ybr="144.02" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="385.55,125.86;364.98,117.39;285.09,29.03" z_order="0">
+    </points>
+  </image>
+  <image id="149" name="54_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="476.34,213.01;455.15,213.62;343.80,162.18" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="328.67" ytl="139.18" xbr="482.39" ybr="234.80" z_order="0">
+    </box>
+  </image>
+  <image id="150" name="55_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="285.70,362.50;276.01,381.26;176.16,439.36" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="156.79" ytl="357.05" xbr="300.83" ybr="457.51" z_order="0">
+    </box>
+  </image>
+  <image id="151" name="55_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="378.90,182.75;374.06,157.33;401.90,50.80" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="352.87" ytl="30.85" xbr="423.68" ybr="186.38" z_order="0">
+    </box>
+  </image>
+  <image id="152" name="55_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="416.42" ytl="94.39" xbr="525.96" ybr="239.64" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="504.78,101.05;504.17,123.44;441.84,219.67" z_order="0">
+    </points>
+  </image>
+  <image id="153" name="56_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="145.90" ytl="291.08" xbr="303.25" ybr="340.71" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="298.41,305.00;277.20,317.10;159.20,317.10" z_order="0">
+    </points>
+  </image>
+  <image id="154" name="56_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="338.35" ytl="94.39" xbr="435.18" ybr="241.46" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="361.35,235.40;363.16,214.22;420.66,109.52" z_order="0">
+    </points>
+  </image>
+  <image id="155" name="56_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="283.88" ytl="141.60" xbr="445.47" ybr="192.44" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="438.21,152.49;417.03,163.99;295.38,165.20" z_order="0">
+    </points>
+  </image>
+  <image id="156" name="57_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="156.18" ytl="275.95" xbr="307.48" ybr="355.23" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="297.20,282.61;280.25,300.16;170.71,335.87" z_order="0">
+    </points>
+  </image>
+  <image id="157" name="57_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="305.67,278.37;315.35,256.59;400.69,185.78" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="290.54" ytl="162.78" xbr="428.52" ybr="282.61" z_order="0">
+    </box>
+  </image>
+  <image id="158" name="57_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="377.69,253.56;367.40,273.53;268.75,343.74" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="251.81" ytl="246.30" xbr="394.63" ybr="365.52" z_order="0">
+    </box>
+  </image>
+  <image id="159" name="58_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="295.99,283.82;280.90,300.80;168.89,338.29" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="154.97" ytl="277.16" xbr="309.30" ybr="352.21" z_order="0">
+    </box>
+  </image>
+  <image id="160" name="58_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="305.67,278.98;317.80,257.20;403.71,184.57" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="289.93" ytl="162.78" xbr="427.31" ybr="282.01" z_order="0">
+    </box>
+  </image>
+  <image id="161" name="58_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="393.42,284.43;372.80,300.20;257.30,323.20" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="242.73" ytl="277.16" xbr="398.26" ybr="345.55" z_order="0">
+    </box>
+  </image>
+  <image id="162" name="59_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="152.55" ytl="174.28" xbr="271.78" ybr="313.48" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="254.23,180.94;248.80,202.70;170.71,290.48" z_order="0">
+    </points>
+  </image>
+  <image id="163" name="59_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="255.44" ytl="201.51" xbr="415.82" ybr="263.85" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="260.88,257.80;280.25,244.48;400.08,226.93" z_order="0">
+    </points>
+  </image>
+  <image id="164" name="59_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="193.10" ytl="160.97" xbr="342.59" ybr="269.30" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="326.85,166.41;314.10,187.00;208.23,248.11" z_order="0">
+    </points>
+  </image>
+  <image id="165" name="5_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="292.96" ytl="159.75" xbr="441.84" ybr="257.80" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="305.06,253.56;318.40,236.00;426.71,182.75" z_order="0">
+    </points>
+  </image>
+  <image id="166" name="5_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="228.20" ytl="181.54" xbr="353.48" ybr="315.90" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="332.90,190.02;327.46,213.01;245.10,297.10" z_order="0">
+    </points>
+  </image>
+  <image id="167" name="5_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="137.42" ytl="154.91" xbr="274.20" ybr="283.22" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="144.69,174.28;165.90,180.30;250.00,260.90" z_order="0">
+    </points>
+  </image>
+  <image id="168" name="60_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="305.67" ytl="94.39" xbr="420.05" ybr="239.64" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="397.05,101.05;397.05,120.42;330.50,216.60" z_order="0">
+    </points>
+  </image>
+  <image id="169" name="60_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="240.31" ytl="211.80" xbr="394.03" ybr="308.03" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="244.54,232.98;268.80,234.20;374.66,286.85" z_order="0">
+    </points>
+  </image>
+  <image id="170" name="60_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="230.02,104.68;225.20,127.70;158.60,226.30" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="143.47" ytl="97.42" xbr="251.81" ybr="243.27" z_order="0">
+    </box>
+  </image>
+  <image id="171" name="61_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="262.70" ytl="52.63" xbr="404.32" ybr="156.12" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="392.82,58.69;380.71,76.24;277.22,137.97" z_order="0">
+    </points>
+  </image>
+  <image id="172" name="61_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="298.41,417.57;309.90,396.99;402.50,332.24" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="283.88" ytl="310.45" xbr="426.71" ybr="423.62" z_order="0">
+    </box>
+  </image>
+  <image id="173" name="61_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="205.81" ytl="383.07" xbr="366.19" ybr="447.23" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="358.32,421.81;334.11,430.28;216.10,405.47" z_order="0">
+    </points>
+  </image>
+  <image id="174" name="62_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="350.45" ytl="54.45" xbr="469.07" ybr="190.01" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="465.44,173.07;445.47,163.99;370.43,73.82" z_order="0">
+    </points>
+  </image>
+  <image id="175" name="62_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="348.64,482.33;349.85,458.12;404.30,362.50" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="329.27" ytl="338.29" xbr="430.34" ybr="485.96" z_order="0">
+    </box>
+  </image>
+  <image id="176" name="62_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="379.50,419.39;364.37,403.65;325.04,295.32" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="303.85" ytl="276.00" xbr="383.74" ybr="427.25" z_order="0">
+    </box>
+  </image>
+  <image id="177" name="63_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="484.81,196.67;479.97,218.46;401.90,305.00" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="380.11" ytl="193.65" xbr="499.94" ybr="324.97" z_order="0">
+    </box>
+  </image>
+  <image id="178" name="63_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="456.36,417.57;441.84,404.26;401.30,302.00" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="377.69" ytl="275.95" xbr="461.81" ybr="427.86" z_order="0">
+    </box>
+  </image>
+  <image id="179" name="63_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="331.09,435.12;315.40,420.60;276.60,315.30" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="254.23" ytl="291.69" xbr="337.14" ybr="444.80" z_order="0">
+    </box>
+  </image>
+  <image id="180" name="64_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="391.00,280.79;371.60,288.10;253.62,267.48" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="237.28" ytl="244.48" xbr="398.26" ybr="308.63" z_order="0">
+    </box>
+  </image>
+  <image id="181" name="64_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="352.87" ytl="147.05" xbr="477.55" ybr="279.58" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="371.03,275.35;377.70,252.30;457.00,165.20" z_order="0">
+    </points>
+  </image>
+  <image id="182" name="64_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="280.86,241.46;303.80,248.70;391.00,330.42" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="274.80" ytl="222.09" xbr="410.97" ybr="348.58" z_order="0">
+    </box>
+  </image>
+  <image id="183" name="65_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="190.68,346.16;195.50,369.80;178.00,477.50" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="155.58" ytl="338.89" xbr="218.52" ybr="490.80" z_order="0">
+    </box>
+  </image>
+  <image id="184" name="65_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="325.64,199.09;350.50,191.20;467.26,193.65" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="320.19" ytl="166.40" xbr="482.99" ybr="217.25" z_order="0">
+    </box>
+  </image>
+  <image id="185" name="65_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="230.02" ytl="265.06" xbr="392.21" ybr="331.63" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="235.46,292.29;259.70,288.70;378.90,311.10" z_order="0">
+    </points>
+  </image>
+  <image id="186" name="66_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="183.42,372.79;201.60,381.90;271.17,479.91" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="177.37" ytl="354.02" xbr="293.56" ybr="496.25" z_order="0">
+    </box>
+  </image>
+  <image id="187" name="66_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="338.35,175.49;360.14,176.10;459.99,237.83" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="332.90" ytl="151.89" xbr="480.57" ybr="261.43" z_order="0">
+    </box>
+  </image>
+  <image id="188" name="66_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="210.65" ytl="267.48" xbr="368.00" ybr="352.21" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="219.12,344.34;236.68,328.61;348.60,292.30" z_order="0">
+    </points>
+  </image>
+  <image id="189" name="67_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="414.00" ytl="170.04" xbr="466.65" ybr="329.21" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="434.58,174.28;441.84,195.46;435.79,314.08" z_order="0">
+    </points>
+  </image>
+  <image id="190" name="67_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="372.24,145.23;392.20,158.50;449.71,259.61" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="364.98" ytl="130.10" xbr="475.73" ybr="278.37" z_order="0">
+    </box>
+  </image>
+  <image id="191" name="67_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="239.70,361.89;246.36,336.47;316.56,251.75" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="219.12" ytl="226.93" xbr="339.56" ybr="367.94" z_order="0">
+    </box>
+  </image>
+  <image id="192" name="68_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="322.61,125.86;345.01,123.44;456.36,164.60" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="318.38" ytl="100.44" xbr="473.91" ybr="188.80" z_order="0">
+    </box>
+  </image>
+  <image id="193" name="68_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="315.35" ytl="341.92" xbr="408.55" ybr="490.80" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="321.40,355.23;338.35,370.36;386.16,477.49" z_order="0">
+    </points>
+  </image>
+  <image id="194" name="68_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="219.12" ytl="223.91" xbr="345.61" ybr="365.52" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="239.70,361.89;245.80,337.70;319.59,248.72" z_order="0">
+    </points>
+  </image>
+  <image id="195" name="69_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="257.25,115.57;273.60,96.20;374.10,46.60" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="245.15" ytl="27.82" xbr="391.00" ybr="122.23" z_order="0">
+    </box>
+  </image>
+  <image id="196" name="69_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="352.27,348.58;354.69,372.79;309.90,477.50" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="287.51" ytl="341.92" xbr="378.29" ybr="492.62" z_order="0">
+    </box>
+  </image>
+  <image id="197" name="69_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="302.04,297.74;323.80,312.30;377.69,409.70" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="297.20" ytl="280.79" xbr="403.11" ybr="430.88" z_order="0">
+    </box>
+  </image>
+  <image id="198" name="6_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="314.14" ytl="154.31" xbr="431.55" ybr="296.53" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="334.72,292.29;338.35,269.30;405.53,176.10" z_order="0">
+    </points>
+  </image>
+  <image id="199" name="6_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="242.12,84.11;227.60,105.30;126.53,168.83" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="107.16" ytl="77.45" xbr="257.25" ybr="190.01" z_order="0">
+    </box>
+  </image>
+  <image id="200" name="6_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="150.13,165.20;171.31,171.86;261.49,254.77" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="145.90" ytl="147.05" xbr="283.88" ybr="274.74" z_order="0">
+    </box>
+  </image>
+  <image id="201" name="70_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="169.50" ytl="50.82" xbr="265.73" ybr="205.75" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="192.50,199.70;190.68,176.70;243.33,71.40" z_order="0">
+    </points>
+  </image>
+  <image id="202" name="70_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="318.98" ytl="383.68" xbr="446.08" ybr="505.93" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="426.71,389.12;419.45,409.70;338.35,490.80" z_order="0">
+    </points>
+  </image>
+  <image id="203" name="70_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="285.70,306.21;306.90,321.90;363.20,426.60" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="280.86" ytl="290.48" xbr="387.98" ybr="439.96" z_order="0">
+    </box>
+  </image>
+  <image id="204" name="71_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="272.99,193.04;260.28,174.28;252.41,59.90" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="228.20" ytl="43.56" xbr="286.91" ybr="200.30" z_order="0">
+    </box>
+  </image>
+  <image id="205" name="71_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="381.32,341.92;374.06,365.52;292.96,444.80" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="269.96" ytl="334.66" xbr="401.29" ybr="462.96" z_order="0">
+    </box>
+  </image>
+  <image id="206" name="71_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="263.30,319.53;283.28,333.45;339.60,436.30" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="257.25" ytl="305.61" xbr="360.74" ybr="451.46" z_order="0">
+    </box>
+  </image>
+  <image id="207" name="72_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="193.71" ytl="213.01" xbr="355.30" ybr="294.11" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="349.24,271.11;326.85,274.74;210.00,239.00" z_order="0">
+    </points>
+  </image>
+  <image id="208" name="72_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="239.70" ytl="305.00" xbr="367.40" ybr="431.49" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="349.85,312.87;343.80,334.05;260.30,413.30" z_order="0">
+    </points>
+  </image>
+  <image id="209" name="72_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="224.57,340.71;244.50,354.00;297.80,459.33" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="217.91" ytl="325.58" xbr="323.82" ybr="471.43" z_order="0">
+    </box>
+  </image>
+  <image id="210" name="73_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="280.25,159.15;277.22,183.36;211.30,277.80" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="187.65" ytl="153.10" xbr="299.62" ybr="296.53" z_order="0">
+    </box>
+  </image>
+  <image id="211" name="73_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="324.43,284.43;318.38,306.21;236.10,386.70" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="212.47" ytl="275.95" xbr="342.59" ybr="410.91" z_order="0">
+    </box>
+  </image>
+  <image id="212" name="73_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="210.05" ytl="329.21" xbr="312.93" ybr="476.88" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="217.91,342.53;235.50,358.90;288.10,464.80" z_order="0">
+    </points>
+  </image>
+  <image id="213" name="74_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="339.56" ytl="101.05" xbr="452.13" ybr="245.09" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="445.47,231.17;427.31,223.30;363.77,125.26" z_order="0">
+    </points>
+  </image>
+  <image id="214" name="74_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="195.52" ytl="258.40" xbr="323.82" ybr="385.49" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="304.46,262.64;296.59,286.85;211.26,366.13" z_order="0">
+    </points>
+  </image>
+  <image id="215" name="74_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="228.20" ytl="318.92" xbr="330.48" ybr="472.04" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="233.65,334.05;249.38,349.18;302.64,458.12" z_order="0">
+    </points>
+  </image>
+  <image id="216" name="75_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="268.15" ytl="189.41" xbr="427.92" ybr="256.59" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="421.26,197.28;403.70,211.80;288.72,232.98" z_order="0">
+    </points>
+  </image>
+  <image id="217" name="75_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="143.47" ytl="176.70" xbr="227.60" ybr="332.24" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="222.15,321.95;203.99,311.05;161.63,196.07" z_order="0">
+    </points>
+  </image>
+  <image id="218" name="75_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="428.52,283.21;423.70,303.80;340.77,392.76" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="320.80" ytl="275.35" xbr="446.68" ybr="410.91" z_order="0">
+    </box>
+  </image>
+  <image id="219" name="76_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="381.32,251.75;378.30,274.10;311.72,370.97" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="288.12" ytl="245.09" xbr="402.50" ybr="387.31" z_order="0">
+    </box>
+  </image>
+  <image id="220" name="76_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="272.38,403.04;250.60,397.60;165.26,312.87" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="145.29" ytl="289.27" xbr="275.41" ybr="419.99" z_order="0">
+    </box>
+  </image>
+  <image id="221" name="76_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="432.76,16.93;425.50,36.90;340.20,110.70" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="322.01" ytl="14.51" xbr="447.89" ybr="133.73" z_order="0">
+    </box>
+  </image>
+  <image id="222" name="77_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="340.16,248.72;360.14,259.61;423.70,358.90" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="335.32" ytl="233.59" xbr="449.71" ybr="380.05" z_order="0">
+    </box>
+  </image>
+  <image id="223" name="77_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="141.05" ytl="372.79" xbr="288.12" ybr="459.93" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="274.80,380.65;258.46,400.62;154.37,439.96" z_order="0">
+    </points>
+  </image>
+  <image id="224" name="77_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="509.62,64.74;486.02,61.71;401.29,13.30" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="356.51" ytl="10.27" xbr="515.67" ybr="86.53" z_order="0">
+    </box>
+  </image>
+  <image id="225" name="78_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="208.84" ytl="289.87" xbr="362.56" ybr="366.13" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="354.08,295.93;337.10,312.90;225.78,342.53" z_order="0">
+    </points>
+  </image>
+  <image id="226" name="78_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="309.30" ytl="380.05" xbr="385.56" ybr="511.38" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="316.60,390.90;331.69,407.89;360.74,507.75" z_order="0">
+    </points>
+  </image>
+  <image id="227" name="78_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="275.41" ytl="144.02" xbr="433.37" ybr="237.22" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="427.31,214.22;404.92,217.85;300.80,169.40" z_order="0">
+    </points>
+  </image>
+  <image id="228" name="79_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="389.19,144.62;372.24,157.33;250.60,174.88" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="239.10" ytl="134.94" xbr="395.84" ybr="199.09" z_order="0">
+    </box>
+  </image>
+  <image id="229" name="79_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="226.99" ytl="334.05" xbr="384.34" ybr="403.05" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="375.27,339.50;358.32,355.84;244.54,383.07" z_order="0">
+    </points>
+  </image>
+  <image id="230" name="79_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="376.48,317.71;352.27,315.29;248.78,260.22" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="230.62" ytl="235.40" xbr="381.32" ybr="339.50" z_order="0">
+    </box>
+  </image>
+  <image id="231" name="7_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="217.31" ytl="243.27" xbr="352.27" ybr="368.55" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="234.86,361.89;242.73,341.31;327.46,265.66" z_order="0">
+    </points>
+  </image>
+  <image id="232" name="7_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="125.92" ytl="91.97" xbr="276.62" ybr="192.44" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="265.12,97.42;250.60,116.18;141.70,167.00" z_order="0">
+    </points>
+  </image>
+  <image id="233" name="7_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="181.00,148.86;201.60,141.60;319.60,146.40" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="173.13" ytl="116.79" xbr="337.14" ybr="173.67" z_order="0">
+    </box>
+  </image>
+  <image id="234" name="80_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="394.63" ytl="20.56" xbr="452.13" ybr="179.12" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="423.08,173.07;415.21,149.47;428.52,41.74" z_order="0">
+    </points>
+  </image>
+  <image id="235" name="80_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="312.93" ytl="284.43" xbr="391.61" ybr="436.33" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="317.80,294.70;336.50,314.10;368.61,421.20" z_order="0">
+    </points>
+  </image>
+  <image id="236" name="80_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="250.60" ytl="191.83" xbr="404.92" ybr="297.74" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="400.08,275.35;375.90,274.70;272.38,218.46" z_order="0">
+    </points>
+  </image>
+  <image id="237" name="81_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="374.06" ytl="30.24" xbr="455.15" ybr="180.33" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="394.03,174.28;394.03,151.89;433.40,46.60" z_order="0">
+    </points>
+  </image>
+  <image id="238" name="81_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="219.73" ytl="262.64" xbr="374.66" ybr="355.84" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="368.00,332.24;345.00,331.00;237.89,285.03" z_order="0">
+    </points>
+  </image>
+  <image id="239" name="81_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="159.21" ytl="330.42" xbr="290.54" ybr="456.30" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="285.10,438.10;262.09,433.31;181.00,355.84" z_order="0">
+    </points>
+  </image>
+  <image id="240" name="82_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="315.96,223.91;327.50,203.90;423.68,133.73" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="299.01" ytl="115.57" xbr="440.63" ybr="227.54" z_order="0">
+    </box>
+  </image>
+  <image id="241" name="82_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="339.00,274.10;320.20,257.80;271.17,153.10" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="246.36" ytl="131.92" xbr="343.80" ybr="286.24" z_order="0">
+    </box>
+  </image>
+  <image id="242" name="82_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="368.00,478.70;348.64,481.72;238.49,436.94" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="223.97" ytl="413.33" xbr="372.24" ybr="501.69" z_order="0">
+    </box>
+  </image>
+  <image id="243" name="83_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="218.52" ytl="173.07" xbr="380.71" ybr="232.98" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="226.99,208.17;246.40,197.90;365.60,204.50" z_order="0">
+    </points>
+  </image>
+  <image id="244" name="83_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="302.04" ytl="13.90" xbr="394.03" ybr="157.33" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="328.06,148.86;326.85,124.05;372.24,22.98" z_order="0">
+    </points>
+  </image>
+  <image id="245" name="83_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="364.98,383.68;342.59,391.55;223.36,367.94" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="208.84" ytl="343.74" xbr="371.64" ybr="413.33" z_order="0">
+    </box>
+  </image>
+  <image id="246" name="84_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="256.65,110.13;276.62,115.57;369.21,194.86" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="250.60" ytl="94.39" xbr="389.79" ybr="213.62" z_order="0">
+    </box>
+  </image>
+  <image id="247" name="84_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="309.90" ytl="67.76" xbr="384.34" ybr="226.33" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="336.53,221.48;331.10,196.10;359.53,91.97" z_order="0">
+    </points>
+  </image>
+  <image id="248" name="84_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="286.91" ytl="167.02" xbr="341.38" ybr="329.21" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="299.01,173.07;312.30,194.90;314.75,317.11" z_order="0">
+    </points>
+  </image>
+  <image id="249" name="85_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="341.98" ytl="342.53" xbr="467.86" ybr="472.64" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="347.43,359.47;368.00,368.50;444.30,454.50" z_order="0">
+    </points>
+  </image>
+  <image id="250" name="85_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="389.79,244.48;376.48,226.33;355.90,107.10" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="332.30" ytl="92.58" xbr="398.26" ybr="252.35" z_order="0">
+    </box>
+  </image>
+  <image id="251" name="85_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="286.91" ytl="167.62" xbr="340.77" ybr="326.79" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="297.80,173.67;310.51,194.25;313.54,314.08" z_order="0">
+    </points>
+  </image>
+  <image id="252" name="86_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="346.22,309.24;354.10,333.40;338.95,449.04" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="314.75" ytl="300.77" xbr="377.69" ybr="463.57" z_order="0">
+    </box>
+  </image>
+  <image id="253" name="86_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="450.92,325.58;430.34,323.76;335.30,257.80" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="310.51" ytl="232.38" xbr="457.57" ybr="342.53" z_order="0">
+    </box>
+  </image>
+  <image id="254" name="86_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="262.09" ytl="164.60" xbr="316.56" ybr="328.61" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="276.62,173.07;286.91,193.65;287.51,312.87" z_order="0">
+    </points>
+  </image>
+  <image id="255" name="87_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="229.41" ytl="344.34" xbr="368.00" ybr="452.07" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="355.29,346.76;345.61,367.94;252.40,432.70" z_order="0">
+    </points>
+  </image>
+  <image id="256" name="87_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="444.26,334.66;423.68,332.24;328.06,266.27" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="303.85" ytl="242.06" xbr="450.92" ybr="354.63" z_order="0">
+    </box>
+  </image>
+  <image id="257" name="87_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="130.20" ytl="95.00" xbr="219.13" ybr="251.75" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="194.31,102.87;195.52,125.86;151.95,232.38" z_order="0">
+    </points>
+  </image>
+  <image id="258" name="88_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="230.62" ytl="321.95" xbr="351.06" ybr="460.54" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="343.80,442.99;323.82,436.33;257.30,352.20" z_order="0">
+    </points>
+  </image>
+  <image id="259" name="88_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="456.36,354.63;438.20,371.60;329.90,400.00" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="309.90" ytl="348.58" xbr="467.86" ybr="419.99" z_order="0">
+    </box>
+  </image>
+  <image id="260" name="88_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="259.67,126.47;239.10,140.39;125.92,168.83" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="110.79" ytl="121.02" xbr="269.96" ybr="193.65" z_order="0">
+    </box>
+  </image>
+  <image id="261" name="89_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="242.12" ytl="342.53" xbr="390.40" ybr="444.20" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="384.95,426.65;362.56,424.83;267.54,369.15" z_order="0">
+    </points>
+  </image>
+  <image id="262" name="89_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="301.43" ytl="326.18" xbr="460.60" ybr="402.44" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="451.52,334.05;433.97,351.00;323.20,378.80" z_order="0">
+    </points>
+  </image>
+  <image id="263" name="89_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="296.59,255.38;276.60,272.90;168.89,304.40" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="154.97" ytl="249.93" xbr="306.88" ybr="329.82" z_order="0">
+    </box>
+  </image>
+  <image id="264" name="8_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="170.10,275.95;189.47,269.30;308.70,288.10" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="163.45" ytl="248.72" xbr="328.06" ybr="314.08" z_order="0">
+    </box>
+  </image>
+  <image id="265" name="8_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="141.66" ytl="31.45" xbr="294.77" ybr="111.94" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="286.30,85.92;261.50,88.30;156.18,54.45" z_order="0">
+    </points>
+  </image>
+  <image id="266" name="8_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="175.55" ytl="118.60" xbr="337.14" ybr="174.28" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="180.39,150.68;202.80,142.20;315.96,146.44" z_order="0">
+    </points>
+  </image>
+  <image id="267" name="90_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="384.95,423.02;364.40,420.60;271.17,364.92" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="244.54" ytl="337.68" xbr="392.82" ybr="440.57" z_order="0">
+    </box>
+  </image>
+  <image id="268" name="90_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="445.47,314.08;429.73,328.61;319.60,356.50" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="295.99" ytl="303.79" xbr="455.76" ybr="379.44" z_order="0">
+    </box>
+  </image>
+  <image id="269" name="90_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="346.82,377.02;347.40,401.80;300.83,501.69" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="275.41" ytl="369.15" xbr="371.64" ybr="509.56" z_order="0">
+    </box>
+  </image>
+  <image id="270" name="91_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="378.90" ytl="203.93" xbr="448.50" ybr="366.73" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="404.92,361.29;398.30,341.90;424.30,228.10" z_order="0">
+    </points>
+  </image>
+  <image id="271" name="91_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="440.63,291.08;424.29,306.82;309.90,334.05" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="290.54" ytl="286.85" xbr="448.50" ybr="357.66" z_order="0">
+    </box>
+  </image>
+  <image id="272" name="91_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="278.43,411.52;265.10,431.50;171.31,488.98" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="153.16" ytl="403.05" xbr="293.56" ybr="506.53" z_order="0">
+    </box>
+  </image>
+  <image id="273" name="92_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="130.16,352.81;135.00,330.40;195.50,240.20" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="112.00" ytl="217.25" xbr="222.76" ybr="358.26" z_order="0">
+    </box>
+  </image>
+  <image id="274" name="92_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="283.28" ytl="255.98" xbr="444.26" ybr="325.58" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="436.39,262.64;418.84,278.37;303.25,305.61" z_order="0">
+    </points>
+  </image>
+  <image id="275" name="92_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="274.20,477.48;252.41,470.83;178.58,389.73" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="153.76" ytl="364.90" xbr="279.65" ybr="495.04" z_order="0">
+    </box>
+  </image>
+  <image id="276" name="93_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="159.21" ytl="35.69" xbr="246.36" ybr="188.80" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="237.28,178.52;221.50,163.40;177.97,58.69" z_order="0">
+    </points>
+  </image>
+  <image id="277" name="93_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="374.06" ytl="308.63" xbr="486.02" ybr="448.44" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="378.29,323.76;399.47,335.87;461.81,425.44" z_order="0">
+    </points>
+  </image>
+  <image id="278" name="93_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="488.44,456.30;470.28,457.51;373.45,408.49" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="349.24" ytl="379.44" xbr="496.91" ybr="476.27" z_order="0">
+    </box>
+  </image>
+  <image id="279" name="94_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="186.44" ytl="88.34" xbr="323.22" ybr="204.54" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="311.12,93.79;299.01,110.73;207.02,179.73" z_order="0">
+    </points>
+  </image>
+  <image id="280" name="94_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="133.79" ytl="216.04" xbr="249.38" ybr="364.31" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="229.41,224.51;223.36,250.53;156.20,338.90" z_order="0">
+    </points>
+  </image>
+  <image id="281" name="94_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="334.72" ytl="419.39" xbr="487.23" ybr="473.25" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="481.18,441.78;460.60,452.70;354.70,443.00" z_order="0">
+    </points>
+  </image>
+  <image id="282" name="95_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="387.37,211.80;374.70,230.00;282.67,295.92" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="255.44" ytl="204.54" xbr="400.69" ybr="321.34" z_order="0">
+    </box>
+  </image>
+  <image id="283" name="95_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="95.66" ytl="171.25" xbr="156.18" ybr="331.03" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="123.50,177.30;130.77,196.67;118.70,316.50" z_order="0">
+    </points>
+  </image>
+  <image id="284" name="95_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="335.93" ytl="406.07" xbr="473.31" ybr="509.56" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="457.57,412.12;446.10,433.90;362.00,495.00" z_order="0">
+    </points>
+  </image>
+  <image id="285" name="96_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="386.16,229.35;366.20,226.90;259.70,168.20" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="242.12" ytl="144.02" xbr="394.03" ybr="249.32" z_order="0">
+    </box>
+  </image>
+  <image id="286" name="96_red.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="248.78,208.17;246.36,229.35;181.60,330.42" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="163.45" ytl="200.91" xbr="269.96" ybr="351.60" z_order="0">
+    </box>
+  </image>
+  <image id="287" name="96_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="239.70" ytl="327.40" xbr="357.11" ybr="464.78" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="338.96,334.05;333.51,356.44;264.50,447.80" z_order="0">
+    </points>
+  </image>
+  <image id="288" name="97_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="253.02" ytl="54.45" xbr="329.88" ybr="208.17" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="318.38,200.30;303.25,183.36;276.00,69.00" z_order="0">
+    </points>
+  </image>
+  <image id="289" name="97_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="133.19" ytl="204.54" xbr="292.35" ybr="276.56" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="284.49,211.20;263.91,227.54;150.74,254.17" z_order="0">
+    </points>
+  </image>
+  <image id="290" name="97_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="291.14" ytl="131.31" xbr="433.97" ybr="257.80" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="429.13,239.04;406.74,233.59;314.14,159.75" z_order="0">
+    </points>
+  </image>
+  <image id="291" name="98_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="339.56" ytl="12.69" xbr="455.76" ybr="127.07" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="448.50,111.34;430.34,102.26;363.77,18.14" z_order="0">
+    </points>
+  </image>
+  <image id="292" name="98_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="199.15" ytl="82.89" xbr="343.80" ybr="185.17" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="337.74,169.44;312.93,165.20;216.70,104.68" z_order="0">
+    </points>
+  </image>
+  <image id="293" name="98_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="369.82,172.46;369.21,147.65;423.68,50.82" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="345.01" ytl="35.69" xbr="445.47" ybr="179.12" z_order="0">
+    </box>
+  </image>
+  <image id="294" name="99_blue.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="335.93" ytl="218.46" xbr="486.62" ybr="311.05" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="475.12,223.91;463.00,241.50;362.56,285.64" z_order="0">
+    </points>
+  </image>
+  <image id="295" name="99_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="213.07" ytl="61.11" xbr="357.11" ybr="165.81" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="352.88,144.62;329.27,144.02;232.44,80.47" z_order="0">
+    </points>
+  </image>
+  <image id="296" name="99_yellow.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="206.42" ytl="86.53" xbr="336.53" ybr="214.22" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="225.18,211.80;230.62,189.41;311.72,108.92" z_order="0">
+    </points>
+  </image>
+  <image id="297" name="9_blue.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="168.89,276.56;190.68,269.30;308.69,285.64" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="163.45" ytl="250.53" xbr="328.06" ybr="312.27" z_order="0">
+    </box>
+  </image>
+  <image id="298" name="9_red.jpg" width="612" height="512">
+    <box label="pick_point" source="manual" occluded="0" xtl="149.53" ytl="12.69" xbr="306.88" ybr="86.53" z_order="0">
+    </box>
+    <points label="pick_point" source="manual" occluded="0" points="297.20,59.29;274.20,62.32;162.24,22.37" z_order="0">
+    </points>
+  </image>
+  <image id="299" name="9_yellow.jpg" width="612" height="512">
+    <points label="pick_point" source="manual" occluded="0" points="185.20,161.60;196.10,142.20;293.56,84.71" z_order="0">
+    </points>
+    <box label="pick_point" source="manual" occluded="0" xtl="167.68" ytl="59.29" xbr="313.54" ybr="166.41" z_order="0">
+    </box>
+  </image>
+</annotations>
