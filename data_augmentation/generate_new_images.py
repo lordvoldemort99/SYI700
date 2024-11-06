@@ -6,6 +6,8 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator, array_to_im
 images_path = os.path.dirname(__file__) + '/images'
 image_save_path = os.path.dirname(__file__) + '/augmented_images'
 
+number_of_augmented_images = 3
+
 datagen = ImageDataGenerator(
                 brightness_range=(0.5, 1.5),
                 rotation_range=50,
@@ -29,7 +31,7 @@ for image_name in os.listdir(images_path):
     for batch in datagen.flow(image, batch_size=1,
                             save_to_dir=image_save_path, save_prefix=image_name, save_format='jpg'):
         i += 1
-        if i > 3:
+        if i > number_of_augmented_images:
             break  # otherwise the generator would loop indefinitely
 
 
