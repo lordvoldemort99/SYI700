@@ -1,7 +1,31 @@
+## Content
++ [Project Description](#project-description)
++ [Code Help](#help-for-the-code)
+    + [Annotation tools](#annotation-tool)
+    + [Connecting Google Colab to Google Drive](#connecting-google-colab-to-google-drive)
+    + [fine tune YOLO11n-pose](#fine-tune-yolo11n-pose)
+    + [Save the best mdoel during the train](#saving-the-best-model-during-the-train)
+    + [Save the train result on Google Drive](#save-the-result-on-google-drive)
+    + [Test the mdoel on new images](#predict-new-images)
+
+
+### Project Description
+
+
+
+
+### Code Help
+
 #### Annotation tool
 
 [online - CVAT.ai](https://www.cvat.ai/)
 
+> Save the annotated data in `.xml` file.
+> + This data will be one line contaning all images data. 
+>
+> Then it is needed to be converted to `coco` format to be used for YOLO.
+> [Convert xml to coco](/keypoint_detection/bottle_neck_keypoint/annotations/cvat_to_coco.py)
+ 
 on-device ***labelme*** : 
 ```shell
 $ pip install labelme
@@ -21,7 +45,7 @@ drive.mount('/content/gdrive')
 - only one class is accepted in YOLO-pose, so far.
 - the label file should be `.txt` and contains one line : `0 bx by bw bh x y` where `0` is the classs ID `bx by` are center point coordinates of the bounding box around the object, `bw bh` are bounding box width and height, `x y` are the position of the key point. If you have more than one key point, all their `x y` should be appended to this line.
 
-#### Saviong the best model during the train
+#### Saving the best model during the train
 
 > you need to turn the flag `save` to true in this line:
 
@@ -29,7 +53,6 @@ drive.mount('/content/gdrive')
 model.train(data='/content/gdrive/My Drive/university_west_bottle_pickPoint/config.yaml', epochs=100, imgsz=(640, 480), save=True)
 
 ```
-
 
 ### Save the result on Google Drive
 
