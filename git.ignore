@@ -1,1 +1,5 @@
+
+vision_env/
 data/
+data_augmentation/augmented_images/
+data_augmentation/images/
