@@ -10,10 +10,10 @@ class keypoint:
 
         self.image_path = ''
 
-    def predict(self, image_path) -> dict:
+    def predict(self, image_array) -> dict:
         '''
             Prameters:
-            image_path (str): absolute path to the image or camera output
+            image_array : array of image
 
             Returns: 
             dict: {'cap_corner':0, 'pick_point':0, 'angle_point':0}\n
@@ -21,11 +21,11 @@ class keypoint:
                   pick_point: coordinates of center point under the cap (pick point), \n
                   angle_point: coordinates of center point at the end of the bottle(for angle caculation)
         '''
-        self.image_path = image_path
+        self._image = image_array
         _points = []
         self.bottle_keypoints = {'cap_corner':0, 'pick_point':0, 'angle_point':0}
 
-        _results = self.model(self.image_path)[0]
+        _results = self.model(self._image)[0]
 
         ### bottle found
         if len(_results) > 0:
@@ -42,7 +42,7 @@ class keypoint:
             return None 
 
     def show_image_with_keypoints(self):
-        self._image = cv2.imread(self.image_path)
+        # self._image = cv2.imread(self.image)
         if any(value != 0 for value in self.bottle_keypoints.values()):
             for keypoint in self.bottle_keypoints.items():
                 ### put the key points on the image
@@ -52,7 +52,7 @@ class keypoint:
                 cv2.circle(self._image, (x, y), 2, (0, 0, 255), 3)
 
         cv2.imshow("predicted image", self._image)
-        cv2.waitKey(0)
+        # cv2.waitKey(0)
 
     def save_predicted_image(self, save_path, image_name):
         cv2.imwrite(f"{save_path}/{image_name}.jpg", self._image)
@@ -62,8 +62,10 @@ class keypoint:
 ************************
 TO DO
 1. test what is the output when there is no bottle in the image ----- DONE
-2. test for the camera images - real time
+
 3. test the whole class    ----- DONE
+
+2. test for the camera images - real time
 4. test the show funtion when using the camer - the waitkey part might be a problem
 
 '''
@@ -76,8 +78,9 @@ if __name__ == "__main__":
     image_path = current_dir + '/test_images/' + image_name
     save_path = current_dir + '/predicted_images'
 
+    image = cv2.imread(image_path)
     key_point_detector = keypoint()
-    result = key_point_detector.predict(image_path)
+    result = key_point_detector.predict(image)
     print(f"result is : {result}")
 
     key_point_detector.show_image_with_keypoints()
