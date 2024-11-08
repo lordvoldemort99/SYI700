@@ -13,6 +13,15 @@
 ### Project Description
 ---
 
+#### Key point detection 
+A model is trained to give 3 key points on bottles:
++ one point on the cap corner for detecting the color of the bottle
++ one point under the cap for picking coordinates, fir the bottle to be picked by robot
++ one point at the end of the bottle for calculatign the orientation of the bottle
+
+This model was trained on 300 images (no augmented images)
+For the annotation, CVAT was utilized. 
+
 <br><br><br><br>
 
 ### Code Help
