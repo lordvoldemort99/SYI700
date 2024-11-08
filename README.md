@@ -1,6 +1,7 @@
 ## Content
 + [Project Description](#project-description)
 + [Code Help](#help-for-the-code)
+    + [Basler Camera](#basler-camera)
     + [Annotation tools](#annotation-tool)
     + [Connecting Google Colab to Google Drive](#connecting-google-colab-to-google-drive)
     + [fine tune YOLO11n-pose](#fine-tune-yolo11n-pose)
@@ -10,13 +11,57 @@
 
 
 ### Project Description
+---
 
-
-
+<br><br><br><br>
 
 ### Code Help
+---
 
-#### Annotation tool
+### Basler Camera
+
+> Basler camera cannot be opened using `OpenCV`, either its software (`pylon Viwer`) can be used or the following code. A better version of the code can be found [here](./realtime_test/basler_cam.py)
+
+```py
+from pypylon import pylon
+import cv2
+import numpy as np
+
+# Create an instant camera object with the first camera device found
+camera = pylon.InstantCamera(pylon.TlFactory.GetInstance().CreateFirstDevice())
+
+# Start grabbing continuously (camera will start to capture images)
+camera.StartGrabbing(pylon.GrabStrategy_LatestImageOnly)
+
+# Convert images to OpenCV format and display
+converter = pylon.ImageFormatConverter()
+# Convert to OpenCV BGR format
+converter.OutputPixelFormat = pylon.PixelType_BGR8packed
+converter.OutputBitAlignment = pylon.OutputBitAlignment_MsbAligned
+
+while camera.IsGrabbing():
+    grabResult = camera.RetrieveResult(5000, pylon.TimeoutHandling_ThrowException)
+    if grabResult.GrabSucceeded():
+        # Access the image data as a NumPy array
+        image = converter.Convert(grabResult)
+        img = image.GetArray()
+        image_h, image_w, _ = img.shape
+        img = cv2.resize(img, (image_w//4, image_h//4))
+
+        cv2.imshow('resized Camera', img)
+
+        # Break loop if 'ESC' is pressed
+        if cv2.waitKey(1) & 0xFF == 27:
+            break
+    
+    grabResult.Release()
+# Stop camera capturing
+camera.StopGrabbing()
+cv2.destroyAllWindows()
+
+```
+
+### Annotation tool
 
 [online - CVAT.ai](https://www.cvat.ai/)
 
@@ -40,12 +85,12 @@ from google.colab import drive
 drive.mount('/content/gdrive')
 ```
 
-#### fine tune YOLO11n-pose
+### fine tune YOLO11n-pose
 
 - only one class is accepted in YOLO-pose, so far.
 - the label file should be `.txt` and contains one line : `0 bx by bw bh x y` where `0` is the classs ID `bx by` are center point coordinates of the bounding box around the object, `bw bh` are bounding box width and height, `x y` are the position of the key point. If you have more than one key point, all their `x y` should be appended to this line.
 
-#### Saving the best model during the train
+### Saving the best model during the train
 
 > you need to turn the flag `save` to true in this line:
 
