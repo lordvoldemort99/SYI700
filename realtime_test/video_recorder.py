@@ -16,12 +16,13 @@ camera.Open()
 camera.PixelFormat.SetValue("BGR8")  # Ensure the pixel format is compatible with OpenCV
 
 # Set video properties
-frame_width = camera.Width.Value
-frame_height = camera.Height.Value
+frame_width = camera.Width.Value//4
+frame_height = camera.Height.Value//4
 fps = 20  
 
 # Initialize VideoWriter for saving video in MP4 format
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # Codec for .mp4 format
+
 out = cv2.VideoWriter(f'{current_dir}/videos/output_video.mp4', fourcc, fps, (frame_width, frame_height))
 
 # Start grabbing frames from the camera
@@ -35,7 +36,7 @@ try:
         if grab_result.GrabSucceeded():
             # Convert frame to numpy array (compatible with OpenCV)
             frame = grab_result.Array
-            frame = cv2.resize(frame, (frame_width//4, frame_height//4))
+            frame = cv2.resize(frame, (frame_width, frame_height))
             # Display the frame (optional)
             cv2.imshow('Recording', frame)
 
