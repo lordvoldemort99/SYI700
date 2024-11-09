@@ -56,60 +56,65 @@ class keypoint:
             Takes the cap point, creates a bounding box utilizing pick-point. 
             Get average on the pixel color
         """
-        ######################################################################################
-        ####    Create a point in front of top left corner on the cap, on the right side   ###
-        ######################################################################################
 
-        topLeft_x, topLeft_y = self.bottle_keypoints['cap_corner'][0], self.bottle_keypoints['cap_corner'][1]   
-        pickPoint_x, pickPoint_y = self.bottle_keypoints['pick_point'][0], self.bottle_keypoints['pick_point'][1]  
+        if self.bottle_keypoints != None:  ### bottle detected
 
-        ### amplitude of the line between pick-point and topleft-corner on the cap
-        amplitude = math.sqrt((pickPoint_x - topLeft_x)**2 + (pickPoint_y - topLeft_y)**2) 
+            ######################################################################################
+            ####    Create a point in front of top left corner on the cap, on the right side   ###
+            ######################################################################################
 
-        ### the angle of the line
-        theta = math.atan2((pickPoint_y-topLeft_y), (pickPoint_x-topLeft_x))
-        theta_degrees = theta * (180/np.pi)
+            topLeft_x, topLeft_y = self.bottle_keypoints['cap_corner'][0], self.bottle_keypoints['cap_corner'][1]   
+            pickPoint_x, pickPoint_y = self.bottle_keypoints['pick_point'][0], self.bottle_keypoints['pick_point'][1]  
 
-        ### the point on the top right corner of the cap
-        rotated_angle = (theta_degrees - 120) * (np.pi / 180) ## convert to Raduian
+            ### amplitude of the line between pick-point and topleft-corner on the cap
+            amplitude = math.sqrt((pickPoint_x - topLeft_x)**2 + (pickPoint_y - topLeft_y)**2) 
 
-        topRight_x = pickPoint_x + amplitude * math.cos(rotated_angle)
-        topRight_y = pickPoint_y + amplitude * math.sin(rotated_angle)
+            ### the angle of the line
+            theta = math.atan2((pickPoint_y-topLeft_y), (pickPoint_x-topLeft_x))
+            theta_degrees = theta * (180/np.pi)
 
-        ############################################################################################################
-        ###  find the color of pixels in the triangle created from (pick-point, topLeft-corner, topRight-corner) ###
-        ############################################################################################################
+            ### the point on the top right corner of the cap
+            rotated_angle = (theta_degrees - 120) * (np.pi / 180) ## convert to Raduian
 
-        vector1 = (int(topLeft_x), int(topLeft_y))
-        vector2 = (int(pickPoint_x), int(pickPoint_y))
-        vector3 = (int(topRight_x), int(topRight_y))
+            topRight_x = pickPoint_x + amplitude * math.cos(rotated_angle)
+            topRight_y = pickPoint_y + amplitude * math.sin(rotated_angle)
 
-        min_x = min(vector1[0], vector2[0], vector3[0])
-        max_x = max(vector1[0], vector2[0], vector3[0])
+            ############################################################################################################
+            ###  find the color of pixels in the triangle created from (pick-point, topLeft-corner, topRight-corner) ###
+            ############################################################################################################
 
-        min_y = min(vector1[1], vector2[1], vector3[1])
-        max_y = max(vector1[1], vector2[1], vector3[1])
+            vector1 = (int(topLeft_x), int(topLeft_y))
+            vector2 = (int(pickPoint_x), int(pickPoint_y))
+            vector3 = (int(topRight_x), int(topRight_y))
 
-        _pixel_colors = []
-        for x in range(min_x, max_x+1): 
-            for y in range(min_y, max_y+1):
-                if 0 <= x < self._image_width and 0 <= y < self._image_height and self._is_point_in_triangle(x, y, vector1, vector2, vector3):
-                    color= self._image[int(y), int(x)]
-                    _pixel_colors.append(color)
+            min_x = min(vector1[0], vector2[0], vector3[0])
+            max_x = max(vector1[0], vector2[0], vector3[0])
 
-        cap_color = self._color_majortity(_pixel_colors)
-        return cap_color
+            min_y = min(vector1[1], vector2[1], vector3[1])
+            max_y = max(vector1[1], vector2[1], vector3[1])
 
+            _pixel_colors = []
+            for x in range(min_x, max_x+1): 
+                for y in range(min_y, max_y+1):
+                    if 0 <= x < self._image_width and 0 <= y < self._image_height and self._is_point_in_triangle(x, y, vector1, vector2, vector3):
+                        color= self._image[int(y), int(x)]
+                        _pixel_colors.append(color)
+
+            self.cap_color = self._color_majortity(_pixel_colors)
+            return self.cap_color
+        else: ### no bottle detected 
+            self.cap_color = ''
+            return self.cap_color 
     def bottle_orientation(self) -> float:
         """
             Calculate the angle using pick-point and angle-point
             if negative, add 360; all angles are between 0 - 360
         """
 
-    def show_image_with_keypoints(self, stream=True):
+    def show_image_with_keypoints(self, video_stream=True):
         """
-            stream = True (default) : while real-time images from camera or video are being detected
-            stream = False : if only one picture is being detected and shown
+            video_stream = True (default) : while real-time images from camera or video are being detected
+            video_stream = False : if only one picture is being detected and shown
         """
         # self._image = cv2.imread(self.image)
         if any(value != 0 for value in self.bottle_keypoints.values()):
@@ -117,11 +122,13 @@ class keypoint:
                 ### put the key points on the image
                 keypoint_id = keypoint[0]
                 x, y = int(keypoint[1][0]), int(keypoint[1][1])
-                cv2.putText(self._image, f"{keypoint_id}: x:{x}, y:{y}", (x, y+2), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
+                cv2.putText(self._image, f"{keypoint_id}: ({x},{y})", (x, y+2), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
                 cv2.circle(self._image, (x, y), 2, (0, 0, 255), 3)
+                
+                cv2.putText(self._image, self.cap_color, (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 250, 250), 2)
 
         cv2.imshow("predicted image", self._image)
-        if stream == False:
+        if video_stream == False:
             cv2.waitKey(0)
 
     def save_predicted_image(self, save_path, image_name):
@@ -181,11 +188,11 @@ TO DO
 '''
 if __name__ == "__main__":
     # image_name = 'emptyscene.jpg'
-    # image_name = '67_red.jpg_0_1958.jpg'    ## head  up  to the right - red
+    image_name = '67_red.jpg_0_1958.jpg'    ## head  up  to the right - red
     # image_name = '36_Videoimages.jpg'       ## head  up  to the left - red
     # image_name = '70_blue.jpg_0_9550.jpg'   ## head down to the right - blue
     # image_name = '4_yellow.jpg_0_6674.jpg'  ## head down to the right - yellow
-    image_name = 'yellow_Videoimages.jpg'   ## head up to the right - yellow
+    # image_name = 'yellow_Videoimages.jpg'   ## head up to the right - yellow
 
     current_dir = os.path.dirname(__file__)
     image_path = current_dir + '/test_images/' + image_name
@@ -198,4 +205,4 @@ if __name__ == "__main__":
     print(f"result is : {result}")
     bottle_color = key_point_detector.bottle_color()
     print(f"color of the bottle: {bottle_color}")
-    key_point_detector.show_image_with_keypoints(stream=False)
+    key_point_detector.show_image_with_keypoints(video_stream=False)
