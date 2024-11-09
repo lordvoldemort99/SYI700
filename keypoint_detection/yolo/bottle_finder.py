@@ -43,7 +43,8 @@ class keypoint:
             return self.bottle_keypoints
         ### No bottle found
         else: 
-            return None 
+            self.bottle_keypoints = None
+            return self.bottle_keypoints
 
     def bottle_data(self) -> list:
         """
@@ -110,6 +111,22 @@ class keypoint:
             Calculate the angle using pick-point and angle-point
             if negative, add 360; all angles are between 0 - 360
         """
+        if self.bottle_keypoints != None:    
+            anglePoint_x, anglePoint_y = self.bottle_keypoints['angle_point'][0], self.bottle_keypoints['angle_point'][1]   
+            pickPoint_x, pickPoint_y = self.bottle_keypoints['pick_point'][0], self.bottle_keypoints['pick_point'][1]  
+
+            ### the angle of the line
+            _bottle_angle = math.atan2((anglePoint_y-pickPoint_y), (anglePoint_x-pickPoint_x))
+            _bottle_angle_degrees = _bottle_angle * (180/np.pi)
+
+            self._bottle_orientation = 180 - _bottle_angle_degrees
+
+            if self._bottle_orientation == 360:
+                self._bottle_orientation = 0
+
+            return self._bottle_orientation
+        else: ### No bottle found
+            return -1
 
     def show_image_with_keypoints(self, video_stream=True):
         """
@@ -117,7 +134,7 @@ class keypoint:
             video_stream = False : if only one picture is being detected and shown
         """
         # self._image = cv2.imread(self.image)
-        if any(value != 0 for value in self.bottle_keypoints.values()):
+        if self.bottle_keypoints != None:
             for keypoint in self.bottle_keypoints.items():
                 ### put the key points on the image
                 keypoint_id = keypoint[0]
@@ -125,7 +142,8 @@ class keypoint:
                 cv2.putText(self._image, f"{keypoint_id}: ({x},{y})", (x, y+2), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
                 cv2.circle(self._image, (x, y), 2, (0, 0, 255), 3)
                 
-                cv2.putText(self._image, self.cap_color, (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 250, 250), 2)
+                cv2.putText(self._image, f"bottle_color: {self.cap_color}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
+                cv2.putText(key_point_detector._image, f'bottle_orientation: {int(self._bottle_orientation)}', (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
 
         cv2.imshow("predicted image", self._image)
         if video_stream == False:
@@ -188,21 +206,28 @@ TO DO
 '''
 if __name__ == "__main__":
     # image_name = 'emptyscene.jpg'
-    image_name = '67_red.jpg_0_1958.jpg'    ## head  up  to the right - red
+    # image_name = '67_red.jpg_0_1958.jpg'    ## head  up  to the right - red
     # image_name = '36_Videoimages.jpg'       ## head  up  to the left - red
-    # image_name = '70_blue.jpg_0_9550.jpg'   ## head down to the right - blue
+    image_name = '70_blue.jpg_0_9550.jpg'   ## head down to the right - blue
     # image_name = '4_yellow.jpg_0_6674.jpg'  ## head down to the right - yellow
     # image_name = 'yellow_Videoimages.jpg'   ## head up to the right - yellow
+    # image_name = '4_yellow.jpg_0_4343.jpg'   ## head down to the left - yellow
+    # image_name = '62_Videoimages.jpg'   ## horizontal head to the left - blue
 
     current_dir = os.path.dirname(__file__)
     image_path = current_dir + '/test_images/' + image_name
     save_path = current_dir + '/predicted_images'
 
-    image = cv2.imread(image_path)
-    image_width, image_height = image.shape[0], image.shape[1]
     key_point_detector = keypoint()
+
+    image = cv2.imread(image_path)
     result = key_point_detector.predict(image)
     print(f"result is : {result}")
+    
     bottle_color = key_point_detector.bottle_color()
     print(f"color of the bottle: {bottle_color}")
+
+    bottle_angle = key_point_detector.bottle_orientation()
+    print(f"bottle_angle: {bottle_angle}")
+
     key_point_detector.show_image_with_keypoints(video_stream=False)
