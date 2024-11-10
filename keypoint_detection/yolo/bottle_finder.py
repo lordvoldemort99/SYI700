@@ -11,6 +11,8 @@ class keypoint:
         self.model = YOLO(_model_path)
 
         self.image_path = ''
+        self._bottle_orientation = -1 ## no bottle orientation is done
+        self.cap_color = '' ### no color detection is done
 
     def predict(self, image_array) -> dict:
         '''
@@ -46,12 +48,22 @@ class keypoint:
             self.bottle_keypoints = None
             return self.bottle_keypoints
 
-    def bottle_data(self) -> list:
+    def bottle_keyPoints(self, image_array) -> list:
         """
             Returns:
             [x, y, orientation, color]
         """
-
+        predicted_keyPoints = self.predict(image_array)
+        if predicted_keyPoints != None:
+            pick_point_x, pick_point_y = predicted_keyPoints['pick_point']
+            bottle_orientation = self.bottle_orientation()
+            bottle_color = self.bottle_color()
+            
+            bottle_data = [pick_point_x, pick_point_y, bottle_orientation, bottle_color]
+            return bottle_data
+        else:
+            return None
+    
     def bottle_color(self) -> str:
         """
             Takes the cap point, creates a bounding box utilizing pick-point. 
@@ -126,7 +138,8 @@ class keypoint:
 
             return self._bottle_orientation
         else: ### No bottle found
-            return -1
+            self._bottle_orientation = -1
+            return self._bottle_orientation
 
     def show_image_with_keypoints(self, video_stream=True):
         """
@@ -142,8 +155,11 @@ class keypoint:
                 cv2.putText(self._image, f"{keypoint_id}: ({x},{y})", (x, y+2), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
                 cv2.circle(self._image, (x, y), 2, (0, 0, 255), 3)
                 
-                cv2.putText(self._image, f"bottle_color: {self.cap_color}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
-                cv2.putText(key_point_detector._image, f'bottle_orientation: {int(self._bottle_orientation)}', (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
+                if self.cap_color != '': ### color is detected
+                    cv2.putText(self._image, f"bottle_color: {self.cap_color}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
+                
+                if self._bottle_orientation != -1: ### orientation is calculated
+                    cv2.putText(key_point_detector._image, f'bottle_orientation: {int(self._bottle_orientation)}', (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
 
         cv2.imshow("predicted image", self._image)
         if video_stream == False:
@@ -208,11 +224,11 @@ if __name__ == "__main__":
     # image_name = 'emptyscene.jpg'
     # image_name = '67_red.jpg_0_1958.jpg'    ## head  up  to the right - red
     # image_name = '36_Videoimages.jpg'       ## head  up  to the left - red
-    image_name = '70_blue.jpg_0_9550.jpg'   ## head down to the right - blue
+    # image_name = '70_blue.jpg_0_9550.jpg'   ## head down to the right - blue
     # image_name = '4_yellow.jpg_0_6674.jpg'  ## head down to the right - yellow
     # image_name = 'yellow_Videoimages.jpg'   ## head up to the right - yellow
     # image_name = '4_yellow.jpg_0_4343.jpg'   ## head down to the left - yellow
-    # image_name = '62_Videoimages.jpg'   ## horizontal head to the left - blue
+    image_name = '62_Videoimages.jpg'   ## horizontal head to the left - blue
 
     current_dir = os.path.dirname(__file__)
     image_path = current_dir + '/test_images/' + image_name
@@ -221,6 +237,11 @@ if __name__ == "__main__":
     key_point_detector = keypoint()
 
     image = cv2.imread(image_path)
+
+    bottle_keypoints = key_point_detector.bottle_keyPoints(image)
+    print("bottle key-points: ", bottle_keypoints)
+
+    '''
     result = key_point_detector.predict(image)
     print(f"result is : {result}")
     
@@ -229,5 +250,6 @@ if __name__ == "__main__":
 
     bottle_angle = key_point_detector.bottle_orientation()
     print(f"bottle_angle: {bottle_angle}")
+    '''
 
     key_point_detector.show_image_with_keypoints(video_stream=False)
