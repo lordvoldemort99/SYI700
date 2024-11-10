@@ -14,7 +14,7 @@ class keypoint:
         self._bottle_orientation = -1 ## no bottle orientation is done
         self.cap_color = '' ### no color detection is done
 
-    def predict(self, image_array) -> dict:
+    def predict_keyPoints(self, image_array) -> dict:
         '''
             Prameters:
             image_array : array of image
@@ -48,12 +48,12 @@ class keypoint:
             self.bottle_keypoints = None
             return self.bottle_keypoints
 
-    def bottle_keyPoints(self, image_array) -> list:
+    def bottle_features(self, image_array) -> list:
         """
             Returns:
             [x, y, orientation, color]
         """
-        predicted_keyPoints = self.predict(image_array)
+        predicted_keyPoints = self.predict_keyPoints(image_array)
         if predicted_keyPoints != None:
             pick_point_x, pick_point_y = predicted_keyPoints['pick_point']
             bottle_orientation = self.bottle_orientation()
@@ -238,11 +238,11 @@ if __name__ == "__main__":
 
     image = cv2.imread(image_path)
 
-    bottle_keypoints = key_point_detector.bottle_keyPoints(image)
-    print("bottle key-points: ", bottle_keypoints)
+    bottle_data = key_point_detector.bottle_features(image)
+    print("bottle key-points: ", bottle_data)
 
     '''
-    result = key_point_detector.predict(image)
+    result = key_point_detector.predict_keyPoints(image)
     print(f"result is : {result}")
     
     bottle_color = key_point_detector.bottle_color()
