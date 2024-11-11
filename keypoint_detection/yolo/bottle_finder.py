@@ -159,7 +159,7 @@ class keypoint:
                     cv2.putText(self._image, f"bottle_color: {self.cap_color}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
                 
                 if self._bottle_orientation != -1: ### orientation is calculated
-                    cv2.putText(key_point_detector._image, f'bottle_orientation: {int(self._bottle_orientation)}', (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
+                    cv2.putText(self._image, f'bottle_orientation: {int(self._bottle_orientation)}', (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
 
         cv2.imshow("predicted image", self._image)
         if video_stream == False:
