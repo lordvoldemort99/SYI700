@@ -13,8 +13,8 @@ class translator:
         """
         self.aruco_area = 4 * aruco_length
         self.aruco_marker = aruco_dictionary
-
-    def translate_coordinate(self, image, coordinates):
+    
+    def translate_coordinate(self, image, coordinates, angle):
         old_x, old_y = coordinates
 
         font_color = {'red':(0, 0, 255), 'green': (0, 255, 0),'orange':(0, 100, 200), 'black':(0,0,0)}
@@ -73,7 +73,8 @@ class translator:
                 old_coordinate = np.matrix([[old_x],[old_y],[0],[1]])
                 new_coordinate = np.matmul(np.linalg.inv(tfmatrix1),old_coordinate)
                 new_coordinate = new_coordinate/pixel_cm_ratio
-                return new_coordinate
+                new_angle = angle + np.degrees(tfangle)
+                return new_coordinate, new_angle
         else:
             return NO_ARUCO_FOUND
 
@@ -84,10 +85,11 @@ if __name__ == "__main__":
     image_path = current_dir + '/7_ArUco.jpg'
     image = cv2.imread(image_path)
     old_coordinate = (20, 30)
+    angle = 20
 
     aruco_length = 100
-    translator = coordinate_translator(aruco_dictionary=cv2.aruco.DICT_5X5_100, aruco_length=aruco_length)
-    translator_result = translator.translate_coordinate(image, old_coordinate)
+    translator = translator(aruco_dictionary=cv2.aruco.DICT_5X5_100, aruco_length=aruco_length)
+    translator_result = translator.translate_coordinate(image, old_coordinate, angle)
 
     if translator_result is NO_ARUCO_FOUND:
         print("NO ARUCO FOUND !!")
