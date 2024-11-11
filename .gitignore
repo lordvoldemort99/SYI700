@@ -7,3 +7,4 @@ data_augmentation/images/
 **/__pycache__/
 **/images/
 **/videos/
+**/*.jpg
