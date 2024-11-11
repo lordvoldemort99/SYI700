@@ -4,7 +4,7 @@ import os
 
 NO_ARUCO_FOUND = -1
 
-class coordinate_translator:
+class translator:
     def __init__(self, aruco_dictionary, aruco_length):
         """
             Parameter:
@@ -77,8 +77,8 @@ class coordinate_translator:
         else:
             return NO_ARUCO_FOUND
 
-      
-        
+
+
 if __name__ == "__main__":
     current_dir = os.path.dirname(__file__)
     image_path = current_dir + '/7_ArUco.jpg'
