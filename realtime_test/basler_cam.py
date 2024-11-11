@@ -32,20 +32,21 @@ while camera.IsGrabbing():
         # Display the image in a window
         cv2.imshow('resized Camera', img)
 
-        if new_time - last_time > 0.5:
-            ## take pictire
-            image_counter += 1
-            cv2.imwrite(f"{current_dir}/{image_counter}_images.jpg", img)
-            print("********** Image taken **********")
-            last_time = new_time
-
-        if cv2.waitKey(1) & 0xFF==ord('s'):
+        key = cv2.waitKey(1) & 0xFF
+        if key == ord('s'):
             image_counter += 1
             print(image_counter)
-            cv2.imwrite(f"{current_dir}/{image_counter}_blue.jpg", img)
+            cv2.imwrite(f"{current_dir}/{image_counter}_ArUco.jpg", img)
             print("********** Image Saved **********")
+        elif key == ord('r'):
+            if new_time - last_time > 0.5:
+                ## take pictire
+                image_counter += 1
+                cv2.imwrite(f"{current_dir}/{image_counter}_images.jpg", img)
+                print("********** Image taken **********")
+                last_time = new_time
         # Break loop if 'ESC' is pressed
-        if cv2.waitKey(1) & 0xFF == 27:
+        elif key == 27 or key == ord('q'):
             break
     
     grabResult.Release()
