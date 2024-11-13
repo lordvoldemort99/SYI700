@@ -45,7 +45,7 @@ while camera.IsGrabbing():
         img = image.GetArray()
         img = cv2.resize(img, (frame_width, frame_height))
 
-        key_point_data = keypoint_detector.predict(img)
+        key_point_data = keypoint_detector.bottle_features(img)
         # print(f"key points are: {key_point_data}")
         keypoint_detector.show_image_with_keypoints()
 
