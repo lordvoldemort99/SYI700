@@ -56,11 +56,12 @@ class keypoint:
         predicted_keyPoints = self.predict_keyPoints(image_array)
         if predicted_keyPoints != None:
             pick_point_x, pick_point_y = predicted_keyPoints['pick_point']
-            bottle_orientation = self.bottle_orientation()
-            bottle_color = self.bottle_color()
-            
-            bottle_data = [pick_point_x, pick_point_y, bottle_orientation, bottle_color]
-            return bottle_data
+            if 0 <= pick_point_x < self._image_width and 0 <= pick_point_y < self._image_height:
+                bottle_orientation = self.bottle_orientation()
+                bottle_color = self.bottle_color()
+                
+                bottle_data = [pick_point_x, pick_point_y, bottle_orientation, bottle_color]
+                return bottle_data
         else:
             return None
     
@@ -79,42 +80,46 @@ class keypoint:
             topLeft_x, topLeft_y = self.bottle_keypoints['cap_corner'][0], self.bottle_keypoints['cap_corner'][1]   
             pickPoint_x, pickPoint_y = self.bottle_keypoints['pick_point'][0], self.bottle_keypoints['pick_point'][1]  
 
-            ### amplitude of the line between pick-point and topleft-corner on the cap
-            amplitude = math.sqrt((pickPoint_x - topLeft_x)**2 + (pickPoint_y - topLeft_y)**2) 
+            if 0 <= pickPoint_x < self._image_width and 0 <= pickPoint_y < self._image_height:
+            
+                ### amplitude of the line between pick-point and topleft-corner on the cap
+                amplitude = math.sqrt((pickPoint_x - topLeft_x)**2 + (pickPoint_y - topLeft_y)**2) 
 
-            ### the angle of the line
-            theta = math.atan2((pickPoint_y-topLeft_y), (pickPoint_x-topLeft_x))
-            theta_degrees = theta * (180/np.pi)
+                ### the angle of the line
+                theta = math.atan2((pickPoint_y-topLeft_y), (pickPoint_x-topLeft_x))
+                theta_degrees = theta * (180/np.pi)
 
-            ### the point on the top right corner of the cap
-            rotated_angle = (theta_degrees - 120) * (np.pi / 180) ## convert to Raduian
+                ### the point on the top right corner of the cap
+                rotated_angle = (theta_degrees - 120) * (np.pi / 180) ## convert to Raduian
 
-            topRight_x = pickPoint_x + amplitude * math.cos(rotated_angle)
-            topRight_y = pickPoint_y + amplitude * math.sin(rotated_angle)
+                topRight_x = pickPoint_x + amplitude * math.cos(rotated_angle)
+                topRight_y = pickPoint_y + amplitude * math.sin(rotated_angle)
 
-            ############################################################################################################
-            ###  find the color of pixels in the triangle created from (pick-point, topLeft-corner, topRight-corner) ###
-            ############################################################################################################
+                ############################################################################################################
+                ###  find the color of pixels in the triangle created from (pick-point, topLeft-corner, topRight-corner) ###
+                ############################################################################################################
 
-            vector1 = (int(topLeft_x), int(topLeft_y))
-            vector2 = (int(pickPoint_x), int(pickPoint_y))
-            vector3 = (int(topRight_x), int(topRight_y))
+                vector1 = (int(topLeft_x), int(topLeft_y))
+                vector2 = (int(pickPoint_x), int(pickPoint_y))
+                vector3 = (int(topRight_x), int(topRight_y))
 
-            min_x = min(vector1[0], vector2[0], vector3[0])
-            max_x = max(vector1[0], vector2[0], vector3[0])
+                min_x = min(vector1[0], vector2[0], vector3[0])
+                max_x = max(vector1[0], vector2[0], vector3[0])
 
-            min_y = min(vector1[1], vector2[1], vector3[1])
-            max_y = max(vector1[1], vector2[1], vector3[1])
+                min_y = min(vector1[1], vector2[1], vector3[1])
+                max_y = max(vector1[1], vector2[1], vector3[1])
 
-            _pixel_colors = []
-            for x in range(min_x, max_x+1): 
-                for y in range(min_y, max_y+1):
-                    if 0 <= x < self._image_width and 0 <= y < self._image_height and self._is_point_in_triangle(x, y, vector1, vector2, vector3):
-                        color= self._image[int(y), int(x)]
-                        _pixel_colors.append(color)
+                _pixel_colors = []
+                for x in range(min_x, max_x+1): 
+                    for y in range(min_y, max_y+1):
+                        x = int(x)
+                        y = int(y)
+                        if 0 <= x < self._image_height and 0 <= y < self._image_width and self._is_point_in_triangle(x, y, vector1, vector2, vector3):
+                            color= self._image[y, x]
+                            _pixel_colors.append(color)
 
-            self.cap_color = self._color_majortity(_pixel_colors)
-            return self.cap_color
+                self.cap_color = self._color_majortity(_pixel_colors)
+                return self.cap_color
         else: ### no bottle detected 
             self.cap_color = ''
             return self.cap_color 
@@ -127,16 +132,18 @@ class keypoint:
             anglePoint_x, anglePoint_y = self.bottle_keypoints['angle_point'][0], self.bottle_keypoints['angle_point'][1]   
             pickPoint_x, pickPoint_y = self.bottle_keypoints['pick_point'][0], self.bottle_keypoints['pick_point'][1]  
 
-            ### the angle of the line
-            _bottle_angle = math.atan2((anglePoint_y-pickPoint_y), (anglePoint_x-pickPoint_x))
-            _bottle_angle_degrees = _bottle_angle * (180/np.pi)
+            if 0 <= pickPoint_x < self._image_width and 0 <= pickPoint_y < self._image_height:
+                    
+                ### the angle of the line
+                _bottle_angle = math.atan2((anglePoint_y-pickPoint_y), (anglePoint_x-pickPoint_x))
+                _bottle_angle_degrees = _bottle_angle * (180/np.pi)
 
-            self._bottle_orientation = 180 - _bottle_angle_degrees
+                self._bottle_orientation = 180 - _bottle_angle_degrees
 
-            if self._bottle_orientation == 360:
-                self._bottle_orientation = 0
+                if self._bottle_orientation == 360:
+                    self._bottle_orientation = 0
 
-            return self._bottle_orientation
+                return self._bottle_orientation
         else: ### No bottle found
             self._bottle_orientation = -1
             return self._bottle_orientation
@@ -225,10 +232,10 @@ if __name__ == "__main__":
     # image_name = '67_red.jpg_0_1958.jpg'    ## head  up  to the right - red
     # image_name = '36_Videoimages.jpg'       ## head  up  to the left - red
     # image_name = '70_blue.jpg_0_9550.jpg'   ## head down to the right - blue
-    # image_name = '4_yellow.jpg_0_6674.jpg'  ## head down to the right - yellow
+    image_name = '4_yellow.jpg_0_6674.jpg'  ## head down to the right - yellow
     # image_name = 'yellow_Videoimages.jpg'   ## head up to the right - yellow
     # image_name = '4_yellow.jpg_0_4343.jpg'   ## head down to the left - yellow
-    image_name = '62_Videoimages.jpg'   ## horizontal head to the left - blue
+    # image_name = '62_Videoimages.jpg'   ## horizontal head to the left - blue
 
     current_dir = os.path.dirname(__file__)
     image_path = current_dir + '/test_images/' + image_name
