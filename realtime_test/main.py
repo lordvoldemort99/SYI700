@@ -17,6 +17,10 @@ FPS = 10
 ARUCO_LENGTH = 100
 ARUCO_MARKER = cv2.aruco.DICT_5X5_100
 
+### these have been found by avaluating by measuring in the real layout
+X_OFFSET = 20
+Y_OFFSET = 10
+
 current_dir = os.path.dirname(__file__)
 predictedImg_savePath = current_dir + '/predicted_images/' 
 
@@ -48,22 +52,31 @@ while camera.IsGrabbing():
     if grabResult.GrabSucceeded():
         # Access the image data as a NumPy array
         image = converter.Convert(grabResult)
-        img = image.GetArray()
-        img = cv2.resize(img, (frame_width, frame_height))
+        image = image.GetArray()
+        image = cv2.resize(image, (frame_width, frame_height))
 
+        aruco_state = translator.aruco_detector(image)
         bottle_data = keypoint_detector.bottle_features(image)
-        pick_point = tuple(bottle_data[:2])
-        bottle_orientation = bottle_data[2]
-        print("bottle key-points: ", bottle_data)
-        print(f"pick point: {pick_point}")
+        if bottle_data != None:
+            pick_point = tuple(bottle_data[:2])
+            bottle_orientation = bottle_data[2]
+            print("bottle key-points: ", bottle_data)
+            print(f"pick point: {pick_point}")
 
-        new_coordinates, new_orientation = translator.translate_coordinate(image, pick_point, bottle_orientation)
-        new_coordinates = [coords[0] for coords in new_coordinates.tolist()]
-        new_coordinates = (new_coordinates[:2])
-        print("new_coordinates: ", new_coordinates, "real_angle: ", new_orientation) ### new_coordinates in mm and angle in degrees
+            if aruco_state != coordinate_translator.NO_ARUCO_FOUND:
+                new_coordinates, new_orientation = translator.translate_coordinates(pick_point, bottle_orientation)
+                new_coordinates = [coords[0] for coords in new_coordinates.tolist()]
+                new_coordinates = (new_coordinates[:2])
+                new_coordinates[0] = new_coordinates[0] - X_OFFSET
+                new_coordinates[1] = new_coordinates[1] - Y_OFFSET
+            
+                print("new_coordinates: ", new_coordinates, "real_angle: ", new_orientation) ### new_coordinates in mm and angle in degrees
 
+                cv2.putText(image, (f"real_pick_coords: ({int(new_coordinates[0])}, {int(new_coordinates[1])})"), (10, 150), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 1)
+        
+        # translator.show_aruco()
         keypoint_detector.show_image_with_keypoints()
-
+        # cv2.imshow("image", image)
         if record_video == True:
             print("recording ...........")
             out.write(keypoint_detector._image)
