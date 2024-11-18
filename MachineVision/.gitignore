@@ -1,0 +1,10 @@
+
+vision_env/
+data/
+data_augmentation/augmented_images/
+data_augmentation/images/
+.vscode
+**/__pycache__/
+**/images/
+**/videos/
+**/*.jpg
