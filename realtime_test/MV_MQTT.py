@@ -53,8 +53,7 @@ client.publish(ready_topic, "MV_ready")
 time.sleep(1) 
 
 # Step 2: Update coordinates and bottle type when requested
-def update_coordinates():
-    global handshake_status, x_coordinate, y_coordinate, orientation, bottle_index
+def update_coordinates(handshake_status, x_coordinate, y_coordinate, orientation, bottle_type):
 
     while True:
         # Wait for specific update command from PLC
